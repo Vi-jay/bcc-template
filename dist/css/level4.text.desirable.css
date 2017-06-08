@@ -1,0 +1,47 @@
+.coursepage_desirable {
+  text-align: left;
+  color: black; }
+  .coursepage_desirable h2 {
+    text-align: center;
+    width: 100%;
+    display: block;
+    font-weight: 700;
+    font-size: 22px; }
+
+.desirable_content {
+  background: url("../img/level4_et_bg.png") no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  width: 750px;
+  height: 350px;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 8%; }
+  .desirable_content .desirable_cutline {
+    width: 85%;
+    height: 15px;
+    margin: 0 auto;
+    background: url("../img/level4_line_1.png") no-repeat;
+    background-position: center center;
+    background-size: 100% 100%; }
+
+.desirable_word {
+  width: 100%;
+  height: auto;
+  text-align: center; }
+  .desirable_word table {
+    display: inline-block; }
+    .desirable_word table tr {
+      height: 42px; }
+      .desirable_word table tr td span:nth-child(2) {
+        margin-left: 5px; }
+      .desirable_word table tr td:first-child {
+        text-align: left;
+        font-size: 25px;
+        font-family: "Kaiti"; }
+      .desirable_word table tr td:last-child {
+        text-align: left;
+        padding-left: 30px;
+        font-size: 20px;
+        font-family: "arial rounded mt bold"; }

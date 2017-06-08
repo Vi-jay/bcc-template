@@ -1,0 +1,191 @@
+
+.cp-container {
+    position: relative;
+    width: 180px; /* 200 - (2 * 48) */
+    height: 180px;
+    background: url("../img/player/bgr.jpg") 0 0 no-repeat;
+    box-sizing: content-box;
+!important;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+}
+
+.cp-container :focus {
+    border: none;
+    outline: 0;
+}
+
+.cp-buffer-1,
+.cp-buffer-2,
+.cp-progress-1,
+.cp-progress-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 174px;
+    height: 174px;
+    clip: rect(0px, 86px, 174px, 0px);
+    -moz-border-radius: 86px;
+    -webkit-border-radius: 86px;
+    border-radius: 86px;
+}
+
+.cp-buffer-1,
+.cp-buffer-2 {
+    background: url("../img/player/buffer.png") 0 0 no-repeat;
+}
+
+/* FALLBACK for .progress
+ * (24 steps starting from 1hr filled progress, Decrease second value by 104px for next step)
+ * (It needs the container selector to work. Or use div)
+ */
+
+.cp-container .cp-fallback {
+    background: url("../img/player/progress_sprite.jpg") no-repeat;
+    background-position: 0 104px;
+}
+
+.cp-progress-1,
+.cp-progress-2 {
+    background: url("../img/player/progress.png") 0 0 no-repeat;
+    background-size: contain;
+!important;
+}
+
+.cp-buffer-holder,
+.cp-progress-holder,
+.cp-circle-control {
+    position: absolute;
+    width: 174px;
+    height: 174px;
+}
+
+.cp-circle-control {
+    cursor: pointer;
+}
+
+.cp-buffer-holder,
+.cp-progress-holder {
+    clip: rect(0px, 174px, 174px, 86px);
+}
+
+/* This is needed when progress is greater than 50% or for fallback */
+
+.cp-buffer-holder.cp-gt50,
+.cp-progress-holder.cp-gt50,
+.cp-progress-1.cp-fallback {
+    clip: rect(auto, auto, auto, auto);
+}
+
+.cp-controls {
+    margin: 0;
+    padding: 26px;
+}
+
+.cp-controls li {
+    list-style-type: none;
+    display: block;
+
+    /*IE Fix*/
+}
+
+.cp-controls li a {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-indent: -9999px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.cp-controls .cp-play {
+    background: url("../img/player/bofang.png") 7px 0 no-repeat;
+    background-size: contain;
+}
+
+
+.cp-controls .cp-pause {
+    background: url("../img/player/zanting.png") 7px 0 no-repeat;
+    background-size: contain;
+}
+
+
+
+.cp-jplayer {
+    width: 0;
+    height: 0;
+}
+
+
+
+
+
+
+
+.practice_common_box{
+display: flex;
+justify-content: center;
+align-items: center;
+    width: 900px;
+}
+
+.audio-round{
+    margin-left: 5%;
+}
+
+.right-content{
+    width: 698px;
+    height: 384px;
+    background: url("../img/level4/questionAnswer-01.png") no-repeat;
+    background-size: contain;
+    margin-left: 10%;
+    padding: 5%;
+
+}
+.questions{
+    color: #1B4471;
+    font-size: 30px;
+}
+.answer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 30%;
+}
+.answer>li{
+    height: 40%;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.answer>li>span{
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 22px;
+    width: 50%;
+    color: blue;
+    user-select: none;
+    border: 3px dashed #ffffff;
+    border-radius: 5px;
+    margin: 0 0 1px;
+    line-height: 26px;
+    position: relative;
+    left: -30px;
+}
+.content-checkbox{
+    width: 30px;
+    height: 30px;
+    background: #ffffff;
+    border: 2px solid black;
+    border-radius: 5px;
+    position: relative;
+    left: 10%;
+}
+.practice_check_btn{
+    display: inline-block;
+}

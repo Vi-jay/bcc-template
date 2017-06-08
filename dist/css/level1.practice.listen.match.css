@@ -1,0 +1,105 @@
+.listen_match_left {
+  width: 500px;
+  height: 100%;
+  float: left;
+  border-radius: 40px;
+  overflow: hidden; }
+
+.listen_match_figure {
+  display: table;
+  height: 100%;
+  width: 35%;
+  float: left; }
+
+.listen_match_figure div {
+  width: 100%;
+  height: 100%; }
+
+.listen_match_figure span {
+ width: 90px;
+    height: 110px;
+    display: block;
+    margin: 0 auto;
+    background-size: 85% 80% !important;
+    background-position: center 0px !important;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    line-height: 195px;
+    color: #0000FF;
+	font-family:"Corbel";
+    font-size: 18px;
+	}
+
+.listen_match_figure span:nth-child(1) {
+  background: url("../img/meimei_img.png") no-repeat; }
+
+.listen_match_figure span:nth-child(2) {
+  background: url("../img/oma_img.png") no-repeat; }
+
+.listen_match_figure span:nth-child(3) {
+  background: url("../img/steve_img.png") no-repeat; }
+
+.listen_match_like {
+  width: 30%;
+  height: 100%;
+  float: left;
+  display: table; }
+
+.listen_match_like p {
+  display: block;
+  width: 130px;
+  height: 130px;
+  background: url("../img/cloud.png") no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  color: #0000FF;
+  font-size: 24px;
+  margin: 0;
+  padding-top: 25px; }
+
+.listen_match_like p span {
+  display: block; }
+
+.listen_match_blank {
+  display: table;
+  width: 35%;
+  height: 100%; }
+
+.listen_match_blank span {
+  display: block;
+  width: 170px;
+  height: 125px;
+  background: url("../img/choose1_img_bg.png") no-repeat;
+  background-size: 100% 100%;
+  background-position: -4px 2.5px;
+  margin: 0 auto;
+  line-height: 120px;
+  cursor: pointer; }
+
+.listen_match_blank span img {
+  width: 130px;
+  height: 90px; }
+
+.listen_match_right {
+  width: 180px;
+  height: 100%;
+  float: right;
+  display: table; }
+
+.listen_match_right span {
+  cursor: pointer;
+  display: block;
+  width: 170px;
+  height: 125px;
+  background: url("../img/choose1_img_bg.png") no-repeat;
+  background-size: 100% 100% !important;
+  background-position: -4px 2px !important;
+  margin: 0 auto;
+  line-height: 120px; }
+
+.listen_match_right span img {
+  width: 130px;
+  height: 90px; }
+
+.listen_match_active {
+  background: url("../img/practice_active_bg.png") no-repeat !important; }

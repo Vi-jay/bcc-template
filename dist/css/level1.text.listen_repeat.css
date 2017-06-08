@@ -1,0 +1,128 @@
+/*pronounce*/
+
+.pronounce_content {
+	width: 100%;
+	height: 100%;
+	display: table;
+	text-align: center;
+}
+
+.pronounce_body {
+	display: inline-block;
+	width: 700px;
+	height: 350px;
+	background: url(../img/l1_content_bg.png) no-repeat;
+	background-size: 100% 100%;
+	background-position: center center;
+	padding: 25px;
+}
+
+.pronounce_body>table {
+	display: inline-block;
+	height: 100%;
+}
+.pronounce_left{
+	display: inline-block;
+	margin-right: 10px;
+	 vertical-align: middle;
+  *zoom: 1;
+  *display: inline; 
+}
+.pronounce_left p{
+	margin: 0;
+}
+.pronounce_py_tb {
+	jerry: expression(cellSpacing="16");
+	border-collapse: separate;
+	border-spacing: 16px;
+
+}
+
+.pronounce_py_tb td {
+	font-size: 34px;
+	font-weight: 700;
+	width: 90px;
+	height: 55px;
+	background: url(../img/l1_word_bg.png) no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+
+.pronounce_py_tb td p span{
+	display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+.pronounce_tone_tb {
+	jerry: expression(cellSpacing="16");
+	border-collapse: separate;
+	border-spacing: 16px;
+	margin-left: 10px;
+	 vertical-align: middle;
+  *zoom: 1;
+  *display: inline; 
+}
+
+.pronounce_tone_tb td {
+	overflow: hidden;
+	width: 55px;
+	height: 55px;
+	border: 2px solid black;
+	border-radius: 5px;
+	font-weight: 700;
+	font-size: 20px;
+	cursor: pointer;
+	background: -webkit-linear-gradient(top, #007576, #002F32);
+	opacity: 1;
+}
+
+.pronounce_tone_tb td p{
+	display: block;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+    line-height: 51px;
+}
+
+.pronounce_tone_tb td:hover {
+	opacity: .7;
+}
+
+.tone_1_1,
+.tone_1_2,
+.tone_1_3,
+.tone_1_4 {
+	display: inline-block;
+	background-size: 100% 100% !important;
+	background-position: center center !important;
+	vertical-align: middle;
+	*zoom: 1;
+	*display: inline;
+}
+
+.tone_1_1 {
+	width: 25px;
+	height: 7px;
+	background: url(../img/tone_1_1.png) no-repeat;
+}
+
+.tone_1_2 {
+	width: 20px;
+	height: 25px;
+	background: url(../img/tone_1_2.png) no-repeat;
+}
+
+.tone_1_3 {
+	width: 25px;
+	height: 20px;
+	background: url(../img/tone_1_3.png) no-repeat;
+}
+
+.tone_1_4 {
+	width: 20px;
+	height: 25px;
+	background: url(../img/tone_1_4.png) no-repeat;
+}

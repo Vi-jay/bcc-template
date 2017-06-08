@@ -1,0 +1,39 @@
+/*over-page*/
+
+.coursepage_over_img {
+	width: 100%;
+	height: 400px;
+	background: url("../img/over_page_img.png") no-repeat;
+	background-size: 90% 85%;
+	background-position: center 0;
+}
+
+.coursepage_over_btnbox {
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+}
+
+.coursepage_over_btnbox button {
+	font-family: 'Showcard Gothic Bold', 'Showcard Gothic Normal', 'Showcard Gothic';
+	border-radius: 7px;
+	border: 2px solid white;
+	color: #E5C161;
+	background: #002D32;
+	margin-left: 40px;
+	margin-right: 40px;
+	width: 170px;
+}
+
+.coursepage_over_btnbox button:hover {
+	background: #084E62;
+}
+
+.answer>.click {
+	color: #23527C;
+	text-decoration: none;
+	    display: block;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}

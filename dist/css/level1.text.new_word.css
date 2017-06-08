@@ -1,0 +1,139 @@
+/*learning-newword*/
+
+.coursepage_newword_content {
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+
+.coursepage_newword .newword_left .newword_img {
+	width: 280px;
+	height: 180px;
+	border: 5px solid #072A30;
+}
+
+.coursepage_newword .newword_left .newword_img img {
+	width: 100%;
+	height: 100%;
+}
+
+.coursepage_newword .newword_left .newword_title {
+	width: 280px;
+	text-align: center;
+	font-family: 'Showcard Gothic Bold', 'Showcard Gothic Normal', 'Showcard Gothic';
+	font-size: 25px;
+	color: black;
+	margin-bottom: 0;
+	margin-top: 20px;
+}
+
+.newword_right,
+.newword_left {
+	text-align: center;
+	padding-left: 0;
+	padding-right: 0;
+	display: inline-block;
+	vertical-align: top;
+	*zoom: 1;
+	*display: inline;
+}
+
+.newword_right {
+	margin-left: 70px;
+}
+
+.newword_left {
+	margin-right: 70px;
+}
+
+.coursepage_newword .newword_right .newword_pronounce {
+	display: inline-block;
+	padding: 5px;
+	margin: 0 auto;
+	font-size: 40px;
+	color: white;
+	font-weight: 700;
+	border-radius: 5px;
+	background: #002D32;
+	width: 200px;
+}
+
+.coursepage_newword .newword_right .newword_pronounce .newword_pronounce_r {
+	display: block;
+	border: 2px dotted white;
+	border-radius: 5px;
+	background: #084E62;
+}
+
+.coursepage_newword .newword_right .newword_pronounce .newword_pronounce_r p {
+	margin: 0;
+}
+
+.newword_learning {
+	width: auto;
+	height: 90px;
+	position: relative;
+	margin-top: 40px;
+}
+
+.coursepage_newword .newword_right .newword_learning .newword_listen,
+.coursepage_newword .newword_right .newword_learning .newword_read,
+.coursepage_newword .newword_right .newword_learning .newword_count_down {
+	float: left;
+	overflow: hidden;
+	vertical-align: middle;
+	*zoom: 1;
+	*display: inline;
+	min-width: 70px;
+	max-width: 70px;
+	color: #1D6C75;
+	height: 90px;
+	font-weight: 700;
+	position: absolute;
+}
+
+.newword_read p,
+.newword_listen p {
+	margin: 0;
+}
+
+.newword_count_down {
+
+	right: 15px;
+	display:none;
+	
+}
+
+.newword_listen {
+
+	left: 15px;
+	
+}
+
+.newword_read {
+
+	right: 15px;
+}
+
+.coursepage_newword .newword_right .newword_learning .newword_listen .newword_listen_icon,
+.coursepage_newword .newword_right .newword_learning .newword_listen .newword_read_icon,
+.coursepage_newword .newword_right .newword_learning .newword_read .newword_listen_icon,
+.coursepage_newword .newword_right .newword_learning .newword_read .newword_read_icon {
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	background-size: 100% 100% !important;
+	background-position: center center !important;
+	float: left;
+	cursor: pointer;
+}
+
+.coursepage_newword .newword_right .newword_learning .newword_listen .newword_listen_icon,
+.coursepage_newword .newword_right .newword_learning .newword_read .newword_listen_icon {
+	background: url("../img/listen_icon01.png") no-repeat;
+}
+
+.coursepage_newword .newword_right .newword_learning .newword_listen .newword_read_icon,
+.coursepage_newword .newword_right .newword_learning .newword_read .newword_read_icon {
+	background: url("../img/read_icon01.png") no-repeat;
+}

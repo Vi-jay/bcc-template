@@ -1,0 +1,12 @@
+/*listen_repeat 2 */
+.listen_repeat2_word {
+  margin-top: 150px;
+  width: 200px;
+  height: 200px;
+  background: url("../img/listen_choose5_bg.png") no-repeat;
+  background-position: center;
+  background-size: 100% 80%;
+  line-height: 200px;
+  font-size: 50px;
+  color: #CC0099;
+  display: inline-block; }

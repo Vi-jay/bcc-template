@@ -1,0 +1,737 @@
+@charset "UTF-8";
+body,
+html {
+    background: url("../img/level4/level4-body-bg.png") no-repeat !important;
+    background-size: cover !important;
+    font-family: 'Arial Rounded MT Bold', 'Arial Rounded MT';
+    overflow: hidden;
+    height: 100%;
+    min-height: 600px;
+}
+
+/*头部*/
+.head_box {
+    background: url("../img/level4/level4-nav-bg.png");
+    font-family: 'Arial Rounded MT Bold', 'Arial Rounded MT';
+    height: 90px;
+    font-weight: 700;
+}
+.left-bottom-icon{
+    background: url("../img/level4/planet.png");
+    width: 158px;
+    height: 138px;
+    position: absolute;
+    left: -33%;
+    bottom: 15%;
+
+}
+.head_inside {
+    top: 55%;
+    transform: translateY(-50%);
+}
+body .coursepage_setup,body .username_box{
+    position: relative;
+    top:-10%;
+}
+body .coursepage_setup_btn, body .username_btn{
+    height: 80px;
+    width: 80px;
+    margin-top:17%;
+}
+body .username_btn:hover {
+    background: none;
+}
+.coursepage_setup>.coursepage_setup_box{
+    top: 100px;
+}
+.username_box>.username_txt{
+    top: -10px;
+}
+.username_box:hover {
+    background: #254D64;
+}
+.head_logo {
+    margin-left: 30px;
+}
+
+.username_box {
+    float: right !important;
+    margin-right: 20px !important;
+    font-weight: normal !important;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+.username_box > .username_btn > span {
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+}
+
+.username_box > .username_btn > span > img {
+    margin-top: 24px !important;
+}
+
+.lesson_title {
+    width: 100%;
+    height: 100%;
+    font-size: 38px;
+    line-height: 80px;
+    text-align: center;
+    color: white;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.lesson_title .title_icon {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    vertical-align: top;
+    *zoom: 1;
+    *display: inline;
+    background-size: 100% 100% !important;
+    background-position: center center !important;
+    margin-right: 30px;
+    margin-top: 16px;
+}
+
+.lesson_title span {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 50px;
+    margin-left: -155px;
+    *zoom: 1;
+    *display: inline;
+    height: 80px;
+    line-height: 80px;
+}
+
+.listen_title_icon {
+    display: none
+}
+
+.speak_title_icon {
+    background: url("../img/lesson_speak.png") no-repeat;
+}
+
+.read_title_icon {
+    background: url("../img/lesson_read.png") no-repeat;
+}
+
+.write_title_icon {
+    background: url("../img/lesson_write.png") no-repeat;
+}
+
+/*content*/
+.practice_content {
+    width: 100%;
+    height: 80%;
+    position: relative;
+    padding-top: 80px;
+    text-align: center;
+}
+
+/*left*/
+.practice_left {
+    width: 150px;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    left: 50px;
+    top: 80px;
+    padding-top: 8%;
+}
+
+.practice_nav_left,
+.practice_nav_right {
+    display: inline-block;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 120px;
+    height: 110px;
+    background-size: 100% 100% !important;
+    background-position: center center !important;
+    cursor: pointer;
+}
+
+.practice_nav_left {
+    background: url("../img/practice_prev.png") no-repeat;
+}
+
+.practice_nav_left:hover {
+    background: url("../img/practice_prev_active.png") no-repeat;
+}
+
+.practice_nav_right {
+    background: url("../img/practice_next.png") no-repeat;
+}
+
+.practice_nav_right:hover {
+    background: url("../img/practice_next_active.png") no-repeat;
+}
+
+.practice_left_tool_container {
+    position: relative;
+    left: 58%;
+    display: none;
+}
+
+.practice_audio_playing {
+    transition: all 0.2s linear;
+    opacity: 0;
+}
+
+.audio_start {
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+    height: 110px;
+    background: url("../img/audio_play.png") no-repeat;
+    background-size: 120% 120% !important;
+    background-position: center center !important;
+    cursor: pointer;
+    opacity: 1;
+
+}
+
+.audio_stop {
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+    height: 110px;
+    background: url("../img/stop.png") no-repeat;
+    background-size: 120% 120% !important;
+    background-position: center center !important;
+    cursor: pointer;
+    opacity: 1;
+
+}
+
+.practice_playing_active {
+    background: url("../img/level4/left-icon-score.png") no-repeat;
+    background-size: 120% 120% !important;
+}
+
+.practice_score {
+    display: inline-block;
+  width: 186px;
+    height: 213px;
+    background: url("../img/level4/left-icon-score.png") no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    position: absolute;
+    left: -20%;
+    top: 8%;
+}
+
+.practice_score ul {
+    display: block;
+    margin: 0;
+    position: absolute;
+    bottom: 15px;
+    left: 23px;
+}
+
+.practice_score ul li {
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    background: url("../img/practice_grade.png") no-repeat;
+    background-size: 100% 100% !important;
+    background-position: center center !important;
+}
+
+.practice_grade_plus {
+    background: url("../img/practice_grade_2.png") no-repeat !important;
+}
+
+/*right*/
+.practice_right {
+    width: 150px;
+    height: 105%;
+    text-align: center;
+    position: absolute;
+    right: 50px;
+    top: 80px;
+}
+
+.grade_box {
+    border: 2px solid white;
+    background: white;
+    width: 120px;
+    height: 50px;
+    font-weight: 700;
+    border-radius: 30px;
+    -webkit-box-shadow: 2px 4px 5px #888888 inset;
+    box-shadow: 2px 4px 5px #888888 inset;
+    display: table;
+    color: black;
+    font-size: 26px;
+    color: #FFA447;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+.grade_box p {
+    margin: 0;
+    text-align: center;
+}
+
+.grade_box span,
+.grade_box i {
+    display: inline-block;
+    vertical-align: middle;
+    *zoom: 1;
+    *display: inline;
+}
+
+.grade_box .grade {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background: url("../img/grade_icon.png") no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    vertical-align: middle;
+    *zoom: 1;
+    *display: inline;
+}
+
+.practice_speaking {
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+    height: 110px;
+    background: url("../img/audio_speaking.png") no-repeat;
+    background-size: 120% 120% !important;
+    background-position: center center !important;
+    cursor: pointer;
+}
+
+.read_count_down {
+    display: block;
+    margin: 0 auto;
+    width: 146px;
+    height: 143px;
+    background: url("../img/level4/audio-active.png") no-repeat;
+    background-size: contain !important;
+    background-position: right -2px top 0 !important;
+    position: relative;
+    top: -100%;
+    cursor: pointer;
+    color: #0070FF;
+    font-weight: 700;
+    text-align: center;
+    line-height: 143px;
+    font-size: 42px;
+    color: white;
+    display: none;
+}
+#practice_view .practice_common_box{
+    margin: 3% auto 10% auto;!important;
+
+}
+
+/*center*/
+.practice_common_box {
+    width: 750px;
+    height: 100%;
+    display: block;
+}
+
+#practice_view {
+    width: 100%;
+    height: 100%;
+}
+.practice_left ul{
+    top: 29%;
+    left: 25%;
+}
+.practice_score ul :nth-child(2){
+    position: relative;
+    bottom:-15%;
+}
+/*底部*/
+.practice_nav_box {
+    width: auto;
+    max-width: 55%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;
+    position: absolute;
+    margin: auto;
+    top: 90%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+.practice_nav_prev,
+.practice_nav_next {
+    vertical-align: middle;
+    *zoom: 1;
+    *display: inline;
+    width: 30px;
+    height: 25px;
+    display: inline-block;
+    background-size: 100% 100% !important;
+    background-position: center center !important;
+    cursor: pointer;
+}
+
+.practice_nav_prev {
+    background: url("../img/level4/next.png") no-repeat;
+    float: left;
+}
+
+.practice_nav_next {
+    background: url("../img/level4/prev.png") no-repeat;
+    float: right;
+}
+
+.practice_nav_box .progress {
+    vertical-align: middle;
+    *zoom: 1;
+    *display: inline;
+    width: 75%;
+    margin: 0;
+    height: 18px;
+    display: inline-block;
+    border: 1px groove white;
+    border-radius: 20px;
+    overflow: initial !important;
+}
+
+body .progress{
+    background: linear-gradient(to top,#ffffff,#a7a9e6 70%);
+}
+.practice_nav_box .progress-bar {
+    position: relative;
+    background: -webkit-linear-gradient(135deg, #43B0F5 25%, #3282B7 0, #3282B7 50%, #43B0F5 0, #43B0F5 75%, #3282B7 0);
+    background: linear-gradient(-45deg, #43B0F5 25%, #3282B7 0, #3282B7 50%, #43B0F5 0, #43B0F5 75%, #3282B7 0);
+    background-size: 6px 6px;
+    border-radius: 20px;
+}
+
+.practice_nav_box .nav_progress_step_box {
+    display: block;
+    position: absolute;
+    right: -40px;
+    bottom: -14px;
+    margin: 0;
+}
+
+.practice_nav_box .nav_progress_step_box .nav_progress_step {
+    width: 80px;
+    height: 60px;
+    display: block;
+    background: url("../img/level4/progress-icon.png") no-repeat left bottom -6px;
+    background-size: 100% 100%;
+}
+
+.practice_check_btn, .practice_save_btn_bg, .practice_save_btn, .practice_save2_btn, .practice_compare_btn {
+    display: block;
+    position: absolute;
+    border-radius: 8px;
+    bottom: 95%;
+    left: 52.5%;
+    transform: translate3d(-50%, 0, 0);
+    padding-top: 0 !important;
+    padding-left: 45px;
+    padding-right: 45px !important;
+    background: #7200fd;
+    margin-bottom: 30px;
+    z-index: 2;
+}
+
+.schedule {
+    animation: progress 1s ease-in;
+}
+
+.practice_save_btn_bg {
+    animation: none;
+    z-index: 0;
+    background: #006FFE;
+    opacity: 0.5;
+}
+
+.practice_check_btn i, .practice_save_btn i, .practice_save_btn_bg i, .practice_save2_btn i, .practice_compare_btn i {
+    display: none;!important;
+    width: 24px;
+    height: 20px;
+    padding-bottom: 0;
+    background: url("../img/practice_check_icon.png") no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    vertical-align: middle;
+    *zoom: 1;
+    *display: inline;
+    margin-right: 5px;
+}
+
+.practice_check_btn span, .practice_compare_btn span {
+    vertical-align: middle;
+    *zoom: 1;
+    *display: inline;
+    margin-left: 5px;
+    display: none;!important;
+}
+body .practice_nav_box .practice_check_btn{
+    background: url("../img/level4/check.png") no-repeat;
+    width: 149px;
+    height: 29px;
+}
+body .practice_nav_box .practice_check_btn:hover{
+    background: url("../img/level4/check2.png") no-repeat;
+
+}
+.practice_save_btn, practice_save_btn_bg {
+    display: none;
+}
+
+.practice_save_btn:hover {
+    background: #0082AA;
+}
+
+.practice_check_btn:hover, .practice_compare_btn:hover {
+    background: #2300fe;
+}
+
+.practice_pagination {
+    margin: 7px 0 0 45px;
+    color: #6600fe;
+    font-weight: 700;
+}
+
+.practice_pagination span,
+.practice_pagination i {
+    display: inline-block;
+}
+
+.practice_compare_btn {
+    display: none;
+}
+*{
+    user-select: none;
+}
+
+/*弹出*/
+.pop-up-box {
+    background: white;
+    padding: 10px 10px 30px !important;
+    border: 2px solid #999999 !important;
+    border-radius: 20px !important;
+    overflow: initial !important;
+    display: none;
+    min-width: 420px;
+    max-width: 420px;
+    cursor: pointer;
+}
+
+.pop-up-box p {
+    margin: 0;
+}
+
+.pop-up-box .confirm {
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 40px;
+    line-height: 30px;
+    margin: 0 auto;
+    color: white;
+    display: block;
+    clear: both;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.pop-up-box .confirm_blue {
+    background: #009EB0;
+}
+
+.pop-up-box .confirm_red {
+    background: #FF4658;
+}
+.practice_check_btn{
+    display: none;
+}
+/*
+.pop-up-box .result_icon {
+    display: inline-block;
+    position: absolute;
+    width: 90px;
+    height: 50px;
+    left: 0;
+    top: -20px;
+    margin: 0;
+}
+
+.pop-up-box .result_icon .result_img {
+    margin: 0 auto;
+    display: block;
+    width: 70px;
+    height: 50px;
+    background-size: 100% !important;
+    background-position: center !important;
+    z-index: 100;
+}
+
+.pop-up-box .correct_img {
+    background: url("../img/correct_img.png") no-repeat;
+}
+
+.pop-up-box .error_img {
+    background: url("../img/correct_img.png") no-repeat;
+}*/
+.pop-up-box .popup_error,
+.pop-up-box .popup_correct,
+.pop-up-box .popup_good,
+.pop-up-box .popup_saywhat {
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    border-radius: 10px;
+    position: relative;
+}
+
+.pop-up-box .popup_error .inside,
+.pop-up-box .popup_correct .inside,
+.pop-up-box .popup_good .inside,
+.pop-up-box .popup_saywhat .inside {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.pop-up-box .popup_correct .inside p,
+.pop-up-box .popup_good .inside p,
+.pop-up-box .popup_saywhat .inside p {
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 35px;
+    color: #FF4658;
+    text-shadow: 3px 3px 0 #ccc, 5px 5px 0 #eee;
+}
+
+.pop-up-box .popup_good .inside p {
+    -webkit-animation: change 0.93s infinite;
+    animation: change 0.93s infinite;
+}
+
+@-webkit-keyframes change {
+    from {
+        font-size: 34px;
+    }
+    to {
+        font-size: 30px;
+    }
+}
+
+@keyframes change {
+    from {
+        font-size: 34px;
+    }
+    to {
+        font-size: 30px;
+    }
+}
+
+.answer_text {
+    width: 100%;
+    height: auto;
+    color: #FF4658;
+}
+
+.pop-up-box .popup_error .answer_box {
+    width: 100%;
+}
+
+.pop-up-box .popup_error .answer {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.pop-up-box .popup_error .answer_list {
+    display: inline-block;
+    vertical-align: top;
+    *zoom: 1;
+    *display: inline;
+    margin: 0;
+    text-align: initial;
+}
+
+.popup_error_bg {
+    display: block;
+    margin: 0 auto;
+    width: 390px;
+    height: 210px;
+    background: url("../img/popup_error.gif") no-repeat;
+    background-size: 120% 255%;
+    background-position: center -190px;
+    z-index: -1;
+}
+
+.popup_correct_bg {
+    background: url("../img/popup_correct.gif") no-repeat;
+}
+
+.popup_good_bg {
+    background: url("../img/popup_good.gif") no-repeat;
+}
+
+.popup_saywhat_bg {
+    background: url("../img/popup_saywhat.gif") no-repeat;
+}
+
+.popup_correct_bg,
+.popup_good_bg,
+.popup_saywhat_bg {
+    display: block;
+    margin: 0 auto;
+    width: 390px;
+    height: 240px;
+    background-size: 120% 200% !important;
+    background-position: center -80px !important;
+    color: #FF4658;
+    z-index: -1;
+}
+
+@keyframes progress {
+    0% {
+        clip: rect(0px, 182px, 36px, 0px);
+    }
+    100% {
+        clip: rect(0px, 182px, 36px, 182px);
+    }
+}
+
+html {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+.practice_common_box{
+    display: flex;
+    flex-direction: column;
+    height: 430px;
+    margin-left: 21%;
+    margin-bottom: 10%;
+    margin-top: 3%;
+    justify-content: space-between;
+}
+.practice_check_btn{
+    display: inline-block;
+}

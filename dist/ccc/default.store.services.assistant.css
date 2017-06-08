@@ -1,0 +1,158 @@
+.services_assistant_title {
+	width: 100%;
+	height: 68px;
+	background: #2b5376;
+	line-height: 68px;
+	border-bottom: 1px solid black;
+	font-size: 20px;
+}
+
+.servicesass_le_bg {
+	background: #39b547;
+}
+
+.servicesass_ta_bg {
+	background: #00abc9;
+}
+
+.servicesass_title_active {
+	background: #00abc9;
+}
+
+.learning_assistant_btn {
+	border-right: 1px solid black;
+}
+.learning_assistant_btn a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	color: white;
+}
+
+.learning_assistant_btn,
+.teaching_assistant_btn {
+	text-align: center;
+	width: 50%;
+	float: left;
+	height: 100%;
+	cursor: pointer;
+}
+.learning_assistant_btn+.teaching_assistant_btn a{
+	text-decoration: none;
+	color: white;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.learning_assistant_btn:hover {
+	background: #00abc9;
+}
+
+.teaching_assistant_btn:hover {
+	background: #00abc9;
+}
+
+.services_assistant_content {
+	text-align: center;
+	 padding-top: 60px;
+	 padding-bottom: 60px;
+}
+
+.servicesass_l {
+	display: inline-block;
+	height: 260px;
+	width: 205px;
+	vertical-align: middle;
+	*zoom: 1;
+	*display: inline;
+}
+.servicesass_l>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.servicesass_l>a>img{
+    width: 100%;
+    height: 100%;
+}
+.servicesass_l_r {
+	height: 100%;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid white;
+}
+
+.servicesass_l_title {
+	display: inline-block;
+	font-size: 20px;
+	width: 100px;
+	color: black;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+
+.servicesass_l_points {
+	font-weight: 700;
+	color: black;
+	margin-bottom: 20px;
+}
+
+.servicesass_price {
+	display: inline-block;
+	width: 160px;
+	font-weight: 700;
+	color: red;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	border-radius: 5px;
+	background: white;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.servicesass_other {
+	font-size: 12px;
+}
+
+.servicesass_other:last-child {
+	margin: 0;
+}
+
+.servicesass_r {
+	vertical-align: middle;
+	*zoom: 1;
+	*display: inline;
+	padding: 20px;
+	height: 260px;
+	width: 400px;
+	display: inline-block;
+	border: 1px solid #999999;
+	background: #EEEEEE;
+	color: black;
+	text-align: initial;
+}
+
+.servicesass_r>p {
+	margin-bottom: 20px;
+}
+
+.servicesass_r_title {
+	font-weight: 700;
+	font-size: 15px;
+}
+
+.servicesass_r_title>span {
+	display: block;
+}
+
+.servicesass_r_description>span {
+	display: block;
+}
+
+.servicesass_r_other>span {
+	font-size: 12px;
+	display: block;
+	margin-bottom: 5px;
+}

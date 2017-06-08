@@ -1,0 +1,77 @@
+.practice_common_box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 430px;
+    margin-left: 21%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15%;
+    margin-top: 3%;
+}
+
+.left-content {
+    display: inline-block;
+    height: 376px;
+    width: 533px;
+    background: url("../img/level4/eyes_bg.png") no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.right-content {
+    display: inline-block;
+    height: 430px;
+    width: 146px;
+    text-align: center;
+    margin-left: 20%;
+}
+
+.content-text > span {
+    font-family: 'Calibri';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 90px;
+    cursor: pointer;
+    color: black;
+    display: inline-block;
+    position: absolute;
+    height: 90px;
+    line-height: 80px;
+    width: 435px;
+    top: 50%;
+    text-align: center;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.hint {
+    display: inline-block;
+    background: url("../img/level4/hint.png");
+    width: 76px;
+    height: 76px;
+    margin-bottom: 100%;
+    cursor: pointer;
+}
+.hint:hover{
+    background: url("../img/level4/hint-02.png");
+
+}
+.hint-active{
+    background: url("../img/level4/hint-02.png");
+}
+.speak-icon{
+    margin-left: -100px;
+}
+.record {
+    display: inline-block;
+    background: url("../img/level4/record.png") right -2px top 0 no-repeat ;
+    width: 146px;
+    height: 143px;
+    cursor: pointer;
+}
+
+.practice_save_btn,.practice_save_btn_bg{
+    display: inline-block !important;
+
+}
