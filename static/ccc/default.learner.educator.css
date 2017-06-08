@@ -1,0 +1,274 @@
+.studyhome_box {
+  width: 100%;
+  height: auto;
+  padding-top: 100px;
+  padding-bottom: 60px; }
+  .studyhome_box .studyhome_inside {
+    width: 1000px;
+    height: auto;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 0 auto;
+    color: white;
+    border: 1px solid black;
+    background: #213c5a; }
+
+.studyhome_navbox {
+  width: 25%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 500px;
+  text-align: center;
+  float: left; }
+  .studyhome_navbox .studyhome_nav {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    list-style: none; }
+    .studyhome_navbox .studyhome_nav li {
+      width: 100%;
+      height: 20%;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      cursor: pointer;
+      border-bottom: 1px solid black;
+      border-right: 1px solid black; }
+      .studyhome_navbox .studyhome_nav li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: white;
+        text-decoration: none;
+        position: relative; }
+        .studyhome_navbox .studyhome_nav li a span {
+          display: inline-block;
+          width: 40%;
+          height: 100%;
+          float: left;
+          margin-left: 20px;
+          position: relative;
+          text-align: center; }
+          .studyhome_navbox .studyhome_nav li a span img {
+            width: 75px;
+            height: 70px;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0; }
+        .studyhome_navbox .studyhome_nav li a p {
+          display: inline-block;
+          width: 30%;
+          height: auto;
+          float: left;
+          margin: 0;
+          position: absolute;
+          right: 20%;
+          bottom: 26%;
+          font-size: 18px; }
+    .studyhome_navbox .studyhome_nav li:hover {
+      background: #bfe7ef; }
+      .studyhome_navbox .studyhome_nav li:hover p {
+        color: black; }
+    .studyhome_navbox .studyhome_nav li:last-child {
+      border-bottom: none; }
+
+.learnhome_lv_title {
+  width: 100%;
+  height: 15%;
+  border-bottom: 1px solid black;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden; }
+  .learnhome_lv_title .learnhome_lv_n {
+    display: inline-block;
+    width: 15%;
+    height: 40px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 20px;
+    float: left;
+    border-radius: 20px;
+    margin-right: 5%;
+    font-weight: 600;
+    line-height: 40px;
+    margin-top: 2.5%;
+    margin-left: 2%;
+    background: #002060; }
+  .learnhome_lv_title p {
+    display: inline-block;
+    float: left;
+    margin-top: 4%;
+    margin-right: 2%; }
+  .learnhome_lv_title select {
+    width: 18%;
+    float: left;
+    display: inline-block;
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+    color: black;
+    outline: none;
+    margin-top: 4%; }
+
+.learnhome_level {
+  width: 75%;
+  height: 500px;
+  float: left; }
+
+.learnhome_lesson_common {
+  height: 85%;
+  width: 100%;
+  float: left; }
+
+.lh_my_navleft,
+.lh_my_navright {
+  display: inline-block;
+  width: 10%;
+  height: 100%;
+  text-align: center;
+  padding-top: 25%;
+  padding-bottom: 25%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  cursor: pointer; }
+  .lh_my_navleft span,
+  .lh_my_navright span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    color: white;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 27px; }
+
+.lh_my_navright {
+  float: right !important; }
+
+.learnhome_lesson_educator {
+  width: 80%;
+  height: 100%;
+  float: left;
+  margin-top: 1%;
+  margin-bottom: 1%; }
+  .learnhome_lesson_educator dl:nth-child(3) dd span,
+  .learnhome_lesson_educator dl:nth-child(4) dd span {
+    display: block;
+    border-radius: 50%;
+    border: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33px;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 10%;
+    background: #002060; }
+  .learnhome_lesson_educator dl:nth-child(3) dd p,
+  .learnhome_lesson_educator dl:nth-child(4) dd p {
+    margin-top: 5%; }
+  .learnhome_lesson_educator dl {
+    display: inline-block;
+    width: 100%;
+    height: 23%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 1%; }
+    .learnhome_lesson_educator dl dt,
+    .learnhome_lesson_educator dl dd {
+      display: inline-block;
+      width: 14%;
+      height: 100%;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      margin-left: 2%;
+      margin-right: 2%;
+      vertical-align: top;
+      *zoom: 1;
+      *display: inline;
+      border-radius: 5px;
+      overflow: hidden;
+      cursor: pointer;
+      border: 2px solid transparent; }
+    .learnhome_lesson_educator dl dt {
+      background: url("../../../dist/images/l6-zkc.png") no-repeat;
+      background-size: 100% 99% !important;
+      font-weight: normal; }
+      .learnhome_lesson_educator dl dt span {
+        display: block;
+        width: 100%;
+        height: auto;
+        font-size: 20px;
+        margin-top: 8%; }
+      .learnhome_lesson_educator dl dt i {
+        display: inline-block;
+        width: 13px !important;
+        height: 15px !important;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 0 auto;
+        vertical-align: top;
+        *zoom: 1;
+        *display: inline; }
+      .learnhome_lesson_educator dl dt p {
+        display: block;
+        margin: 0;
+        font-size: 10px; }
+    .learnhome_lesson_educator dl dd {
+      background: url("../../../dist/images/l6-lxc.png") no-repeat;
+      color: black;
+      background-size: 100% 100% !important; }
+      .learnhome_lesson_educator dl dd span {
+        display: block;
+        width: 22px;
+        height: 22px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        text-align: center;
+        margin: 13% auto 0; }
+        .learnhome_lesson_educator dl dd span img {
+          width: 100%;
+          height: 100%; }
+      .learnhome_lesson_educator dl dd strong {
+        color: #002060; }
+      .learnhome_lesson_educator dl dd p {
+        display: block;
+        width: 75%;
+        height: auto;
+        font-size: 10px;
+        margin: 0 auto;
+        background: #DDDDDD;
+        vertical-align: top;
+        *zoom: 1;
+        *display: inline;
+        margin-top: 2%; }
+    .learnhome_lesson_educator dl dt:hover {
+      border: 2px solid white; }
+    .learnhome_lesson_educator dl dd:hover {
+      border: 2px solid white; }
+  .learnhome_lesson_educator dl:last-child {
+    margin: 0; }
+
+.lesson_lock {
+  background: url("../../images/lesson-lock.png") no-repeat !important; }
+
+.lesson_wdlx {
+  background: url("../../../dist/images/wdlx.png") no-repeat !important; }
+  .lesson_wdlx p {
+    background: none !important; }
+  .lesson_wdlx span {
+    color: white !important;
+    margin-top: 15% !important; }
+
+.lesson_wdkc {
+  background: url("../../../dist/images/wdzkc.png") no-repeat !important;
+  color: white !important; }

@@ -1,6 +1,6 @@
 <template>
-    <div id="app">
-123
+    <div >
+        123
     </div>
 </template>
 
@@ -14,9 +14,7 @@
 
         },
         created(){
-       setTimeout(function () {
-           window.top.aa();
-       },1000)
+
         },
         computed: {
 
@@ -25,7 +23,7 @@
 </script>
 
 <style lang="less">
-    body {
-
-    }
+body{
+    background: lighten(red,10%);
+}
 </style>

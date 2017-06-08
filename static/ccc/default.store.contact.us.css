@@ -1,0 +1,53 @@
+#contact_us_box {
+	padding: 20px;
+}
+
+.contact_us_title {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.contact_us_titleimg {
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	background: url(/assets/img/coming.png) no-repeat;
+	background-size: 100%;
+	background-position: center;
+	vertical-align: middle;
+	*zoom: 1;
+	*display: inline;
+	margin-right: 20px;
+}
+
+.contact_us_title>p {
+	display: inline-block;
+	margin: 0;
+	font-size: 30px;
+	vertical-align: bottom;
+	*zoom: 1;
+	*display: inline;
+}
+
+.contact_us_text {
+	text-align: center;
+}
+
+.contact_us_text>textarea {
+	display: inline-block;
+	padding: 20px;
+	width: 600px;
+	height: 250px;
+	background: #e9edf1;
+}
+
+.contact_us_btn {
+	text-align: center;
+	margin-top: 25px;
+}
+
+.contact_us_btn>button {
+	font-size: 16px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}

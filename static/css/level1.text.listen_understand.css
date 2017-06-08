@@ -1,0 +1,67 @@
+
+
+/*mainbody-1*/
+.coursepage_mainbody_1 .mainbody_left_img {
+  display: block;
+  float: left;
+  margin-top: 5%; }
+  .coursepage_mainbody_1 .mainbody_left_img .mainbody_listen_img {
+    display: block;
+    width: 80px;
+    height: 70px;
+    background: url("../img/listen-img.png") no-repeat;
+    background-size: 100%; }
+
+.coursepage_mainbody_1 .mainbody_right_content {
+  float: right;
+  width: 650px;
+  height: 470px; }
+  .coursepage_mainbody_1 .mainbody_right_content .mainbody_cat {
+    display: block;
+    margin: 0 auto;
+    background: url("../img/boyd-cat-img.png") no-repeat;
+    background-position: center 110px;
+    background-size: 70%;
+    width: 650px;
+    height: 470px;
+    position: relative; }
+    .coursepage_mainbody_1 .mainbody_right_content .mainbody_cat .figure {
+      width: 70px;
+      height: 85px;
+      border: 1px solid black;
+      background: #009E9F;
+      padding: 3px;
+      position: absolute; }
+      .coursepage_mainbody_1 .mainbody_right_content .mainbody_cat .figure span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: 1px solid black;
+        background-size: cover !important; }
+    .coursepage_mainbody_1 .mainbody_right_content .mainbody_cat .top_img01 {
+      top: 20px;
+      left: 390px; }
+    .coursepage_mainbody_1 .mainbody_right_content .mainbody_cat .top_img02 {
+      top: 20px;
+      left: 480px; }
+    .coursepage_mainbody_1 .mainbody_right_content .mainbody_cat .left_img01 {
+      top: 165px;
+      left: 20px; }
+    .coursepage_mainbody_1 .mainbody_right_content .mainbody_cat .left_img02 {
+      top: 275px;
+      left: 20px; }
+    .coursepage_mainbody_1 .mainbody_right_content .mainbody_cat .bottom_img01 {
+      top: 280px;
+      left: 520px; }
+    .coursepage_mainbody_1 .mainbody_right_content .mainbody_cat .bottom_img02 {
+      top: 375px;
+      left: 520px; }
+    .coursepage_mainbody_1 .mainbody_right_content .mainbody_cat .top_img01 span,
+    .coursepage_mainbody_1 .mainbody_right_content .mainbody_cat .bottom_img02 span {
+      background: url("../img/steve-img.png") no-repeat; }
+    .coursepage_mainbody_1 .mainbody_right_content .mainbody_cat .left_img01 span {
+      background: url("../img/omar-img.png") no-repeat; }
+    .coursepage_mainbody_1 .mainbody_right_content .mainbody_cat .left_img02 span,
+    .coursepage_mainbody_1 .mainbody_right_content .mainbody_cat .bottom_img01 span,
+    .coursepage_mainbody_1 .mainbody_right_content .mainbody_cat .top_img02 span {
+      background: url("../img/meimei-img.png") no-repeat; }

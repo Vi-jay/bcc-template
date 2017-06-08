@@ -1,0 +1,32 @@
+/*grammar*/
+
+.coursepage_grammar {
+	text-align: center;
+}
+
+.coursepage_grammar .grammar_content {
+    width: 650px;
+	display: inline-block;
+	padding: 25px;
+	margin-top: 55px;
+	background:url(../img/l1_content_bg.png) no-repeat;
+	background-size:100% 100%;
+	background-position:2px center; 
+}
+
+.coursepage_grammar .grammar_content .grammar_content_r {
+	width: 100%;
+	height: 100%;
+}
+
+.grammar_content_r>h3{
+display:block;
+text-align:initial;
+font-size:26px;	
+color:#F9FB52;
+margin-top:10px;
+}
+.grammar_content_r>img{
+		width: 100%;
+    height: 300px;
+	}

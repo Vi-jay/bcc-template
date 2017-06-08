@@ -1,0 +1,60 @@
+.match_place_box {
+  width: 100%;
+  height: 100%;
+  display: table; }
+
+.match_place_tonebox {
+    width: 100%;
+    height: 130px;
+    margin-bottom: 70px;}
+  .match_place_tonebox span {
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    background: url("../img/cloud.png") no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    color: #41AEBD;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 80px;
+    line-height: 170px; }
+.match_place_wordbox{
+    width: 100%;
+    height: 150px;
+}
+.match_place_wordbox p {
+  display: block;
+  margin: 0 auto;
+  width: 180px;
+  height: 150px;
+  background: url("../img/choose1_img_bg.png") no-repeat;
+  background-size: 100% 100%;
+  background-position: center 5px;
+  padding-top: 30px; }
+  .match_place_wordbox p span:first-child {
+    display: block;
+    margin: 0 auto;
+    font-size: 36px;
+    color: #41AEBD;
+    font-weight: 700;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #C6E7EC;
+    font-size: 65px; }
+  .match_place_wordbox p span:last-child {
+    font-size: 36px;
+    color: #CC0099; }
+
+.match_place_word {
+  font-size: 36px;
+  color: #0000FF; 
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  }
+
+.yindiao span {
+  line-height: 105px !important;
+  font-size: 80px !important; }

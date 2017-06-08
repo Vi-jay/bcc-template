@@ -1,0 +1,57 @@
+.speak_out_content {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 750px;
+  height: 370px;
+  background: url("../img/speak_out_bg.png") no-repeat;
+  background-size: 35% 90%;
+  background-position: center center; }
+
+.speak_out_py {
+  width: 197px;
+  height: 92px;
+  line-height: 92px;
+  border-radius: 8px;
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  overflow: hidden; }
+  .speak_out_py ul {
+    width: 100%;
+    font-size: 45px;
+    color: red;
+    position: absolute;
+    bottom: 92px;
+    left: 0;
+    margin: 0; }
+    .speak_out_py ul li {
+      display: block;
+      width: 100%;
+      height: 100%; }
+
+.speak_out_play {
+  width: 150px;
+  height: 40px;
+  background: url("../img/speak_out_play_bg.png") no-repeat;
+  background-size: 100% 100% !important;
+  background-position: center center !important;
+  color: #F25044;
+  font-weight: 700;
+  position: absolute;
+  margin: auto;
+  top: 45%;
+  bottom: 0;
+  left: 3px;
+  right: 0; }
+
+.speak_out_play:hover {
+  background: url("../img/speak_out_play_bg2.png") no-repeat; }

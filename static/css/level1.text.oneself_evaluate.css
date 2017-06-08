@@ -1,0 +1,112 @@
+
+
+/*oneself-evaluate*/
+.evaluate_content{
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+.coursepage_evaluate .evaluate_cn {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  margin-bottom:10px;
+  float: left; }
+  .coursepage_evaluate .evaluate_cn li {
+    width: 130px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    vertical-align: middle;
+    *zoom: 1;
+    *display: inline; }
+    .coursepage_evaluate .evaluate_cn li p {
+      margin: 0; }
+  .coursepage_evaluate .evaluate_cn .cn {
+    width: 130px;
+    height: 130px;
+    border: 5px solid #062429;
+    border-radius: 10px;
+    display: inline-block;
+    background-size: cover !important;
+    background-position: center !important; }
+  .coursepage_evaluate .evaluate_cn li:nth-child(1) .cn {
+    background: url("../img/fish_cn.png") no-repeat; }
+  .coursepage_evaluate .evaluate_cn li:nth-child(2) .cn {
+    background: url("../img/dog_cn.png") no-repeat; }
+  .coursepage_evaluate .evaluate_cn li:nth-child(3) .cn {
+    background: url("../img/cat_cn.png") no-repeat; }
+  
+
+.coursepage_evaluate .evaluate_en {
+  display: inline-block;
+  width: 100%;
+  height: 65px;
+  margin: 0;
+  text-align: center;
+  margin-top: 40px;
+  float: left; }
+  .coursepage_evaluate .evaluate_en li {
+    display: inline-block;
+    vertical-align: middle;
+    *zoom: 1;
+    *display: inline;
+    margin-left: 27px;
+    margin-right: 27px;
+    width: 118px;
+    height: 65px;
+}
+
+.coursepage_evaluate .word_key {
+  display: inline-block;
+  width: 118px;
+  height: 65px;
+  padding: 5px;
+  border-radius: 5px;
+  background: #002D32;
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  cursor: pointer; }
+  .coursepage_evaluate .word_key span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    border: 2px dotted white;
+    border-radius: 5px;
+    background: #084E62; }
+
+    /**/
+    .coursepage_evaluate .evaluate_ans {
+  display: inline-block;
+  width: 100%;
+  height: 65px;
+  margin: 0;
+  text-align: center;
+  margin-top: 40px;
+  float: left; }
+  .coursepage_evaluate .evaluate_ans li {
+    display: inline-block;
+    vertical-align: middle;
+    *zoom: 1;
+    *display: inline;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 130px;
+    text-align: center;
+    border: 5px dotted #013E44;
+    height: 75px;
+    cursor: pointer;
+  }
+
+/*.coursepage_evaluate .evaluate_ans .blank {
+    width: 130px;
+    text-align: center;
+    display: block;
+    border-bottom: 5px dotted #013E44;
+    height: 75px;
+    margin-top: 10px; }*/
+

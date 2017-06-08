@@ -1,0 +1,21 @@
+.coursepage_matching {
+  text-align: center; }
+
+.matching_content {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 5%; }
+
+.matching_left,
+.matching_right {
+  display: block;
+  width: 50%; }
+  .matching_left div,
+  .matching_right div {
+    margin-bottom: 10%; }
+
+.matching_left {
+  float: left; }
+
+.matching_right {
+  float: right; }

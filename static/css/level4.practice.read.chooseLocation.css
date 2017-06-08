@@ -1,0 +1,67 @@
+.practice_common_box{
+    display: flex;
+    flex-direction: column;
+    height: 430px;
+    margin-left: 21%;
+    margin-bottom: 10%;
+    margin-top: 3%;
+    justify-content: space-between;
+}
+
+
+.practice_check_btn{
+    display: inline-block;
+}
+
+.topic{
+    width: 100%;
+    flex: 2;
+    vertical-align: middle;
+    font-family: "楷体 Bold 黑体", 楷体;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60px;
+    color: rgb(44, 54, 133);
+    line-height: 72px;
+    white-space: nowrap;
+}
+.select-container{
+    width: 100%;
+    flex: 6;
+    margin-bottom: 5%;
+}
+.topic-image{
+    display: inline-block;
+    width: 403px;
+    height: 293px;
+    background: url("../img/level4/border-lg.png") no-repeat;
+    background-size: contain;
+    padding: 20px 15px 10px 15px;
+}
+.word-button{
+    display: inline-block;
+    width: 163px;
+    height: 63px;
+background: url("../img/level4/read-choose-pit.png") no-repeat;
+    background-size: contain;
+    position: relative;
+    top: 25%;
+    left: 20%;
+    font-size: 40px;
+    color: #2c3685;
+    cursor: pointer;
+}
+
+.topic-pit{
+    width: 181px;
+    height: 81px;
+    display: inline-block;
+    vertical-align: bottom;
+    background: url("../img/level4/read-choose-pit-03.png") no-repeat;
+    cursor: pointer;
+
+}
+.topic-image>img{
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+}

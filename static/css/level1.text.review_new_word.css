@@ -1,0 +1,235 @@
+/*review game*/
+
+.coursepage_reviewgame .reviewgame_top {
+	width: 100%;
+	height: 95px;
+	float: left;
+	margin-top: 50px;
+	text-align: center;
+}
+
+.coursepage_reviewgame .reviewgame_top .reviewgame_img {
+	display: inline-block;
+	width: 100px;
+	height: 95px;
+	margin-left: 40px;
+	margin-right: 40px;
+	vertical-align: top;
+	*zoom: 1;
+	*display: inline;
+	cursor: pointer;
+	position: relative;
+	border: 1px solid transparent;
+}
+
+.reviewgame_img_active {
+	border-color: white;
+	background: rgba(255, 255, 255, 0.5);
+	border-radius: 10px;
+	border: 1px solid blueviolet !important;
+}
+
+.reviewgame_word_active {
+	border-color: white;
+	border-radius: 10px;
+	border: 1px solid blueviolet !important;
+}
+
+.reviewgame_img span {
+	position: absolute;
+	border-radius: 10px;
+	width: 6px;
+	top: 90px;
+	display: none;
+}
+
+.reviewgame_img span:nth-child(2) {
+	background: linear-gradient(white 25%, #fb3 0, #fb3 50%, white 0, white 75%, #fb3 0);
+	background-size: 100% 30px;
+}
+
+.reviewgame_img span:nth-child(3) {
+	background: linear-gradient(white 25%, #2980B9 0, #2980B9 50%, white 0, white 75%, #2980B9 0);
+	background-size: 100% 30px;
+}
+
+.reviewgame_img span:nth-child(4) {
+	background: linear-gradient(white 25%, #E4009D 0, #E4009D 50%, white 0, white 75%, #E4009D 0);
+	background-size: 100% 30px;
+}
+
+.reviewgame_img span:nth-child(5) {
+	background: linear-gradient(white 25%, #54D33B 0, #54D33B 50%, white 0, white 75%, #54D33B 0);
+	background-size: 100% 30px;
+}
+
+.reviewgame_img:nth-child(1) span {}
+
+.reviewgame_img:nth-child(1)>span:nth-child(2) {
+	height: 115px;
+	top: 100px;
+	left: 45px;
+}
+
+.reviewgame_img:nth-child(1)>span:nth-child(3) {
+	height: 225px;
+	left: 120px;
+	transform: rotate(-40deg);
+	top: 70px;
+}
+
+.reviewgame_img:nth-child(1)>span:nth-child(4) {
+    height: 360px;
+    left: 210px;
+    transform: rotate(-65deg);
+    top: 0px;
+}
+
+.reviewgame_img:nth-child(1)>span:nth-child(5) {
+	height: 520px;
+	left: 295px;
+	transform: rotate(-72deg);
+	top: -87px;
+}
+
+.reviewgame_img:nth-child(2) span {}
+
+.reviewgame_img:nth-child(2)>span:nth-child(2) {
+	height: 205px;
+	right: 110px;
+	transform: rotate(40deg);
+	top: 77px;
+}
+
+.reviewgame_img:nth-child(2)>span:nth-child(3) {
+	height: 115px;
+	top: 100px;
+	left: 45px;
+}
+
+.reviewgame_img:nth-child(2)>span:nth-child(4) {
+	height: 205px;
+	left: 114px;
+	transform: rotate(-40deg);
+	top: 77px;
+}
+
+.reviewgame_img:nth-child(2)>span:nth-child(5) {
+	height: 350px;
+	left: 202px;
+	transform: rotate(-62deg);
+	top: 10px;
+}
+
+.reviewgame_img:nth-child(3) span {}
+
+.reviewgame_img:nth-child(3)>span:nth-child(2) {
+	height: 355px;
+	right: 203px;
+	transform: rotate(65deg);
+	top: -1px;
+}
+
+.reviewgame_img:nth-child(3)>span:nth-child(4) {
+	height: 115px;
+	top: 100px;
+	left: 45px;
+}
+
+.reviewgame_img:nth-child(3)>span:nth-child(5) {
+	height: 195px;
+	left: 117px;
+	transform: rotate(-45deg);
+	top: 72px;
+}
+
+.reviewgame_img:nth-child(3)>span:nth-child(3) {
+	height: 210px;
+	right: 116px;
+	transform: rotate(45deg);
+	top: 70px;
+}
+
+.reviewgame_img:nth-child(4) span {}
+
+.reviewgame_img:nth-child(4)>span:nth-child(2) {
+	height: 515px;
+	right: 300px;
+	transform: rotate(72deg);
+	top: -84px;
+}
+
+.reviewgame_img:nth-child(4)>span:nth-child(5) {
+	height: 115px;
+	top: 100px;
+	left: 45px;
+}
+
+.reviewgame_img:nth-child(4)>span:nth-child(3) {
+	height: 365px;
+	right: 215px;
+	transform: rotate(65deg);
+	top: -8px;
+}
+
+.reviewgame_img:nth-child(4)>span:nth-child(4) {
+	height: 215px;
+	right: 125px;
+	transform: rotate(45deg);
+	top: 65px;
+}
+
+.coursepage_reviewgame .reviewgame_top .reviewgame_img>img {
+	width: 100%;
+	height: 100%;
+}
+
+.coursepage_reviewgame .reviewgame_bottom {
+	width: 100%;
+	float: left;
+	font-size: 20px;
+	color: black;
+	margin-top: 130px;
+	text-align: center;
+}
+
+.coursepage_reviewgame .reviewgame_bottom .reviewgame_word {
+	display: inline-block;
+	width: 150px;
+	height: 180px;
+	margin-left: 10px;
+	margin-right: 10px;
+	vertical-align: top;
+	background-size: 100% 100% !important;
+	background-position: center center !important;
+	cursor: pointer;
+	border: 1px solid transparent;
+}
+
+.coursepage_reviewgame .reviewgame_bottom .reviewgame_word p {
+	width: 100%;
+	height: 70px;
+	display: block;
+	margin: 0;
+	margin-top: 80px;
+}
+
+.coursepage_reviewgame .reviewgame_bottom .reviewgame_word p span {
+	display: block;
+}
+
+.coursepage_reviewgame .reviewgame_bottom .reviewgame_word:nth-child(1) {
+	background: url("../img/word-bg1.png") no-repeat;
+}
+
+.coursepage_reviewgame .reviewgame_bottom .reviewgame_word:nth-child(2) {
+	background: url("../img/word-bg2.png") no-repeat;
+}
+
+.coursepage_reviewgame .reviewgame_bottom .reviewgame_word:nth-child(3) {
+	background: url("../img/word-bg3.png") no-repeat;
+}
+
+.coursepage_reviewgame .reviewgame_bottom .reviewgame_word:nth-child(4) {
+	background: url("../img/word-bg4.png") no-repeat;
+}

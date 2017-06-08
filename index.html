@@ -1,13 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>bcc-template</title>
-    <meta name="viewport"
-          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bcc Mandarin - {{$texts['lesson']['subject']}}</title>
+
+    <link rel="stylesheet" href="static/ccc/bootstrap.min.css"/>
+    <link rel="stylesheet" href="static/ccc/animate.min.css"/>
+    <link rel="stylesheet" href="static/ccc/default.bccmandarin.css" />
+    <link rel="stylesheet" href="static/ccc/level4.practice.css" />
+    <link rel="stylesheet" href="static/ccc/default.head.css" />
 </head>
 <body>
-<div id="template">
+<div class="head_box">
+    <div class="head_inside">
+        <div class="head_logo">
+            <span class="logo_img">
+            <a href="{{url('learner/lessons')}}/{{$texts['lesson']['courseid']}}">
+                <img src="./static/img/logo.png"></a>
+            </span>
+        </div>
+        <h1 class="lesson_title">
+            <i class="title_icon listen_title_icon"></i>
+            <span>{{$texts['lesson']['subject']}}</span>
+        </h1>
+        <div class='username_box'>
+            @include('layouts.personal_panel')
+        </div>
+        <div class="coursepage_setup">
+            <div class="coursepage_setup_btn"></div>
+            <div class="coursepage_setup_box">
+                <i></i>
+                <button>
+                    <a href="{{url('learner/lessons_detail')}}/{{$texts['lesson']['rowid']}}">HOME</a>
+                </button>
+                @if($isprint)
+                <button class="coursepage_setup_print">
+                    <a>Print</a>
+                </button>
+                @endif
+            </div>
+        </div>
+    </div>
+</div>
+<!--content-->
+<div class="practice_content">
+    <!--left-->
+    <div class="practice_left">
+        <div id="page_score_view" class="practice_score"><ul></ul></div>
+        <div  class="practice_left_tool_container">
+            <span class="practice_audio_playing audio_start"></span>
+            <span class="practice_speaking"></span>
+            <span class="read_count_down"></span>
+        </div>
+    </div>
+    <!--listen repeat 1-->
+    <div id="practice_view">
+       <div class="practice_common_box" >
+        <div id="template"></div>
+       </div>
+    </div>
+    <!--right-->
+    <div class="practice_right">
+        <div id="self_score_view" class="grade_box">
+            <p class="center_cell">
+                <span class="grade"></span>
+                <i>+</i>
+                <span class="grade_num">{{$texts['star']}}</span>
+            </p>
+        </div>
+    </div>
+</div>
+
+<!--底部-->
+<div class="practice_nav_box">
+    <div class="left-bottom-icon" ></div>
+    <button class="practice_check_btn"><i></i><span>Check</span></button>
+    <button class="practice_compare_btn"><i></i><span>Compare</span></button>
+    <button class="practice_save_btn" style="display: none;"><i></i><span>Save
+    </span></button>
+    <button class="practice_save_btn_bg" style="display: none;"><i></i><span>Save</span></button>
+    <span class="practice_nav_prev"></span>
+    <div class="progress">
+        <div class="progress-bar progress-bar-info" role="progressbar" style="width:0.00001%;">
+            <p class="nav_progress_step_box">
+                <span class="nav_progress_step"></span>
+            </p>
+        </div>
+    </div>
+    <span class="practice_nav_next"></span>
+    <p class="practice_pagination">
+        <span>Page:</span>
+        <span>
+            <i class="practice_current_page">1</i>
+            /
+            <i>{{$textnum-1}}</i>
+        </span>
+    </p>
 </div>
 </body>
 </html>

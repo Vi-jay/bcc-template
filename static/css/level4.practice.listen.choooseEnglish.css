@@ -1,0 +1,68 @@
+.practice_common_box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 430px;
+    margin-left: 21%;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 10%;
+    margin-top: 3%;
+}
+.practice_check_btn{
+    display: inline-block;
+}
+.audio{
+    width: 18%;
+    height: 430px;
+    margin: 0 5%;
+    transform: translateX(13%);
+}
+.audio-icon{
+    background: url("../img/level4/audio-icon.png")  no-repeat;
+    width: 145px;
+    height: 145px;
+    position: relative;
+    top: 10%;
+    right: 4%;
+}
+.audio-button{
+    background: url("../img/level4/audio-play.png") no-repeat;
+    width: 195px;
+    height: 64px;
+    position: relative;
+    top: 15%;
+    left: -22%;
+    cursor: pointer;
+}
+.audio-button:hover{
+    background: url("../img/level4/play2.png");
+
+}
+div[class$="-option"]{
+    width: 145px;
+    height: 145px;
+}
+div[class$="-option"]>div{
+    width: 280px;
+    height: 81px;
+    margin:22% 10% 12% -37% ;
+    background: url("../img/level4/pit2.png") no-repeat;
+    background-size: 280px 81px;
+}
+
+div[class$="-option"]>div>span{
+    line-height: 81px;
+    font-size: 30px;
+    color: black;
+    user-select: none;
+    cursor: pointer;
+}
+
+div[class$="-option"]>div.option-active-style{
+    width: 280px;
+    height: 81px;
+    margin:22% 10% 12% -37% ;
+    background: url("../img/level4/pit.png") no-repeat;
+    background-size: 280px 81px;
+}

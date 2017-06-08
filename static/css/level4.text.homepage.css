@@ -1,0 +1,37 @@
+.coursepage_homepage {
+  text-align: left;
+  color: black; }
+  .coursepage_homepage h2 {
+    text-align: left;
+    display: block;
+    font-weight: 700;
+    font-size: 22px; }
+
+.homepage_content {
+  margin-top: 7%; }
+  .homepage_content p {
+    font-size: 18px;
+    padding-left: 1%; }
+
+.home_page_word ul {
+  margin: 0;
+  text-align: left; }
+  .home_page_word ul li {
+    width: 22.5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 5px;
+    display: inline-block;
+    background: #AA8FFA;
+    text-align: center;
+    line-height: 25px;
+    margin: 1%; }
+    .home_page_word ul li span {
+      display: block; }
+    .home_page_word ul li span:nth-child(1) {
+      font-size: 18px; }
+    .home_page_word ul li span:nth-child(2) {
+      font-size: 30px;
+      font-family: "Kaiti"; }
+    .home_page_word ul li span:nth-child(3) {
+      font-size: 15px; }

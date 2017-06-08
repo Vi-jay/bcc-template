@@ -1,0 +1,117 @@
+.observe_choose_content {
+  width: 100%;
+  height: 100%;
+  display: table; }
+
+.observe_choose {
+  position: relative; }
+
+.observe_choose_left {
+  width: 450px;
+  height: 400px;
+  float: left;
+  background: url("../img/choose1_img_bg.png") no-repeat;
+  background-size: 100% 100%;
+  background-position: -8px 10px;
+  border-radius: 20px;
+  padding: 50px;
+  display: table; }
+  .observe_choose_left .center_cell {
+    width: 100%;
+    height: 100%; }
+  .observe_choose_left .strokes_list {
+    margin: 0; }
+    .observe_choose_left .strokes_list li {
+      display: inline-block;
+      width: 140px;
+      height: 80px;
+      line-height: 80px;
+      cursor: pointer;
+      vertical-align: middle;
+      *zoom: 1;
+      *display: inline;
+      margin: 10px; }
+      .observe_choose_left .strokes_list li img {
+        display: inline-block;
+        width: 65px;
+        height: 65px;
+        vertical-align: middle;
+        *zoom: 1;
+        *display: inline; }
+      img[class^="write"]{
+        position: absolute;
+        top:0;
+        left: -1px;
+        display: none;
+      }
+
+.observe_choose_right {
+  width: 250px;
+  height: 400px;
+  float: right;
+  display: table; }
+  .observe_choose_right .center_cell {
+    width: 100%;
+    height: 100%; }
+
+.observe_choose_right_1,
+.observe_choose_right_2 {
+  width: 240px;
+  height: 180px;
+  margin: 0 auto;
+  display: block;
+  background: url("../img/choose1_img_bg.png") no-repeat;
+  background-size: 95% 100%;
+  background-position: center 6px;
+  color: black;
+  display: table; }
+  .observe_choose_right_1 span,
+  .observe_choose_right_2 span {
+    display: block;
+    font-size: 24px; }
+  .observe_choose_right_1 .observe_choose_wordimg,
+  .observe_choose_right_2 .observe_choose_wordimg {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto; }
+    .observe_choose_right_1 .observe_choose_wordimg img,
+    .observe_choose_right_2 .observe_choose_wordimg img {
+      width: 100%;
+      height: 100%; }
+
+.observe_choose_right_1 {
+  cursor: pointer; }
+
+.observe_choose_right_2 img {
+  width: 120px;
+  height: 120px; }
+
+.observe_choose_leftword {
+  width: 200px;
+  height: 200px;
+  background: url("../img/writing_bg.png") no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+  display: inline-block;
+  cursor: pointer; }
+
+.observe_lighten {
+  float: left;
+  width: 70px;
+  height: 68px;
+  cursor: pointer;
+  display: inline-block;
+  background: url("../img/lighten_img.png") no-repeat;
+  background-position: center center !important;
+  background-size: 100% 100% !important;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: -200px;
+  bottom: 0; }
+
+.observe_lighten_active {
+  background: url(../img/lighten_active_img.png) no-repeat !important;
+  background-size: 101% 100% !important; }

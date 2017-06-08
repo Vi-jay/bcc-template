@@ -1,0 +1,112 @@
+/*汉字联想*/
+
+.coursepage_imagine .imagine_content {
+	display: block;
+	margin: 0 auto;
+	width: 720px;
+	height: 450px;
+	background: url("../img/imagine_bg.png") no-repeat;
+	background-size: 100%;
+	background-position: center;
+	position: relative;
+	top: 20px;
+}
+
+.coursepage_imagine .imagine_content .imagine_content_left {
+	display: inline-block;
+	text-align: center;
+	position: absolute;
+	top: 100px;
+	left: 50px;
+}
+
+.coursepage_imagine .imagine_content .imagine_content_left .imagine_cn {
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	border: 5px solid #072A30;
+	border-radius: 10px;
+}
+
+.imagine_cn>img {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+}
+
+.coursepage_imagine .imagine_content .imagine_content_left .imagine_py {
+	display: block;
+	font-size: 25px;
+	width: 260px;
+	border-top: 2px dotted #072A30;
+	color: black;
+	margin-top: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.imagine_py div {
+	display: inline-block;
+	vertical-align: top;
+	*zoom: 1;
+	*display: inline;
+}
+
+.coursepage_imagine .imagine_content .imagine_content_left .imagine_py p {
+	margin: 0;
+	display: block;
+}
+
+.write_lighten {
+	display: inline-block;
+	vertical-align: top;
+	*zoom: 1;
+	*display: inline;
+	margin-top: 10px;
+}
+
+.coursepage_imagine .imagine_content .imagine_content_right {
+	display: inline-block;
+	position: absolute;
+	text-align: center;
+	left: 415px;
+	top: 100px;
+}
+
+.coursepage_imagine .imagine_content .imagine_content_right .imagine_cn_img {
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	border: 5px solid #072A30;
+	border-radius: 10px;
+	background: white;
+}
+
+.coursepage_imagine .imagine_content .imagine_content_right .imagine_cn_img span {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+}
+
+.imagine_cn_img span img {
+	width: 100%;
+	height: 100%;
+}
+
+.coursepage_imagine .imagine_content .imagine_content_right .imagine_en {
+	font-size: 25px;
+	width: 260px;
+	border-top: 2px dotted #072A30;
+	color: black;
+	margin-top: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: initial;
+}
+
+.coursepage_imagine .imagine_content .imagine_content_right .imagine_en p {
+	margin: 0;
+	word-wrap: break-word;
+	word-break: normal;
+}
