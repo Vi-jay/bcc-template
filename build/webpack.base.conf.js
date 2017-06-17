@@ -1,12 +1,16 @@
 var path = require('path')
-var config = require('../config')
+var config = require('../config/index')
 var utils = require('./utils')
 var projectRoot = path.resolve(__dirname, '../')
 
 
 
-let fileNames = utils.getEntrys("./src/entry");
-console.log(fileNames);
+var fileNames = utils.getEntrys("./src/entry");
+//entryPath
+var entry={},entryPath="./src/entry/";
+fileNames.forEach(function (item) {
+    entry[item]=entryPath+item+".js"
+});
 
 var env = process.env.NODE_ENV
 // check env & config/index.js to decide whether to enable CSS source maps for the
@@ -16,10 +20,11 @@ var cssSourceMapProd = (env === 'production' && config.build.productionSourceMap
 var useCssSourceMap = cssSourceMapDev || cssSourceMapProd
 
 module.exports = {
-    entry: {
-        app: './src/entry/main.js',
-        other: './src/entry/other.js',
-    },
+    // entry: {
+    //     app: './src/entry/main.js',
+    //     other: './src/entry/other.js',
+    // },
+    entry:entry,
     output: {
         path: config.build.assetsRoot,
         publicPath: process.env.NODE_ENV === 'production' ? config.build.assetsPublicPath : config.dev.assetsPublicPath,

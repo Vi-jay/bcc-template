@@ -1,5 +1,5 @@
 var path = require('path')
-var config = require('../config')
+var config = require('../config/index.js')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 exports.assetsPath = function (_path) {
@@ -62,7 +62,8 @@ exports.styleLoaders = function (options) {
 exports.getEntrys = function (startPath) {
     var fs = require('fs');
     var join = require('path').join;
-    var result = [],arr=[];
+    var result = [], arr = [];
+
     function finder(path) {
         let files = fs.readdirSync(path);
         files.forEach((val, index) => {
@@ -71,12 +72,14 @@ exports.getEntrys = function (startPath) {
             if (stats.isDirectory()) finder(fPath);
             if (stats.isFile()) result.push(fPath);
         });
-       result.map(function (item) {
-            if(/.js/g.test(item)){
-                arr.push( item);
+        result.forEach(function (item) {
+            var fileName = /([^\\]*)\.js/g.exec(item + "");
+            if (fileName) {
+                arr.push(fileName[1]);
             }
         });
         return arr;
     }
+
     return finder(startPath);
 };
