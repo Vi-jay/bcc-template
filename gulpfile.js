@@ -3,6 +3,7 @@ var tmtsprite = require('gulp-tmtsprite');
 var gulp = require("gulp");
 var clean = require('gulp-clean');
 var webpack = require('webpack');
+var autoprefixer = require('gulp-autoprefixer');
 
 require('./build/check-versions')()
 require('shelljs/global')
@@ -49,6 +50,14 @@ gulp.task("sprite", ["clean"], function () {
         .pipe(tmtsprite({slicePath: '../img'}))
         .pipe(gulpif('*.png', gulp.dest('./dist/sprite/'), gulp.dest('./dist/css/')));
 });
-gulp.task('default', ["sprite"], function () {
+gulp.task('cleanImg', ["sprite"], function () {
     return gulp.src('./dist/img').pipe(clean());
+});
+
+gulp.task('default',['cleanImg'], function () {
+    return gulp.src('./dist/css/*.css')
+        .pipe(autoprefixer({
+            cascade: false
+        }))
+        .pipe(gulp.dest('./dist/css/'));
 });
