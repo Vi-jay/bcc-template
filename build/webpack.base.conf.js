@@ -72,7 +72,7 @@ module.exports = {
                 loader: 'url',
                 query: {
                     limit: 100,
-                    name: utils.assetsPath('img/[name].[ext]')
+                    name: 'img/[name].[ext]'
                 }
             },
             {
@@ -80,7 +80,7 @@ module.exports = {
                 loader: 'url',
                 query: {
                     limit: 1000,
-                    name: utils.assetsPath('img/[name].[ext]')
+                    name: utils.assetsPath('css/[name].[ext]')
                 }
             },
             {

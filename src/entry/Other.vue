@@ -44,7 +44,7 @@
 <style lang="less">
     @hello: 20px;
     body {
-        background: lighten(gainsboro, 30%);
+        background-image:url("../assets/aa.jpg") ;
         #app {
             font-family: 'Avenir', Helvetica, Arial, sans-serif;
             -webkit-font-smoothing: antialiased;
