@@ -43,7 +43,7 @@ module.exports = {
             'MIXINS': path.resolve(__dirname, '../src/mixins'),
             'UTILS': path.resolve(__dirname, '../src/utils'),
             'VUEX': path.resolve(__dirname, '../src/vuex'),
-            'VIEWS': path.resolve(__dirname, '../src/views')
+            'VIEW': path.resolve(__dirname, '../src/view')
         }
     },
     resolveLoader: {

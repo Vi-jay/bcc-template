@@ -1,6 +1,5 @@
 <template>
     <div>
-        <img src="../../static/logo.png">
         <h2>hello-2</h2>
         <p>
             <router-link to="/foo">Go to Foo</router-link>

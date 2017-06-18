@@ -1,0 +1,5 @@
+body{background-image: url("../sprite/other.2fbcf95f0b1d283f7f2f3f9182c391da.png");  background-position: -0px -0px;}body #app{font-family:Avenir,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-align:center;color:#2c3e50;margin-top:20px}body h1,body h2{font-weight:400}body ul{list-style-type:none;padding:0}body li{display:inline-block;margin:0 10px}body a{color:#42b983}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),only screen and (min--moz-device-pixel-ratio: 2),only screen and (min-resolution: 240dpi) {body{background-image:url("../sprite/other.2fbcf95f0b1d283f7f2f3f9182c391da@2x.png");-webkit-background-size:512px;background-size:512px;background-position: -0px -0px;}}
+
+@media only screen and (min-device-width: 414px) and (-webkit-min-device-pixel-ratio: 3) {body{background-image:url("../sprite/other.2fbcf95f0b1d283f7f2f3f9182c391da@3x.png");-webkit-background-size:341.3333333333333px;background-size:341.3333333333333px;background-position: -0px -0px;}}

@@ -1,6 +1,5 @@
 <template>
     <div>
-        <img src="../../static/logo.png">
         <h2>Essential1 Linkssad</h2>
         <a href="./other.html">other</a>
         <p>

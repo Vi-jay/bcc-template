@@ -1,0 +1,86 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+body, div, dl, dt, dd, ul, ol,
+li, h1, h2, h3, h4, h5, h6, pre, code,
+form, fieldset, legend, input,
+button, textarea, select, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+address, caption, cite, code,
+dfn, em, strong, th, var {
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+
+abbr, acronym {
+    border: 0;
+    font-variant: normal;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+}
+
+abbr, acronym {
+    border: 0;
+    font-variant: normal;
+}
+
+sup {
+    vertical-align: text-top;
+}
+
+sub {
+    vertical-align: text-bottom;
+}
+
+input, textarea, select {
+    font-weight: inherit;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+input, textarea, select {
+    *font-size: 100%
+}
+
+/* 方便 */
+img {
+    border: 0;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+/* 方便 */
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+audio, video, canvas {
+    display: inline-block;
+}
