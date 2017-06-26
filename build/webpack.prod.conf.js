@@ -19,7 +19,7 @@ var plugins=[
     }),
     new webpack.optimize.OccurrenceOrderPlugin(),
     // extract css into its own file
-    new ExtractTextPlugin(utils.assetsPath('css/[name].[contenthash].css')),
+    new ExtractTextPlugin('css/[name].[contenthash].css'),
     // generate dist main.html with correct asset hash for caching.
     // you can customize output by editing /main.html
     // see https://github.com/ampedandwired/html-webpack-plugin
@@ -44,7 +44,7 @@ var plugins=[
         chunks: ['vendor']
     })
 ];
-var fileNames = utils.getEntrys("./src/entry"),viewPtah="./src/view/";
+var fileNames = utils.getEntrys("./src/entry"),viewPtah="./src/html/";
 fileNames.forEach(function (item) {
     plugins.push(
         new HtmlWebpackPlugin({

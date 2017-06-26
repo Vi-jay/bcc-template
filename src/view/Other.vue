@@ -1,6 +1,8 @@
 <template>
     <div>
         <h2>hello</h2>
+        <img src="../assets/img/aa.jpg" alt="">
+        <img src="../assets/img/bb.png" alt="">
         <p>
             <router-link to="/foo">Go to Foo</router-link>
             <router-link to="/bar">Go to Bar</router-link>

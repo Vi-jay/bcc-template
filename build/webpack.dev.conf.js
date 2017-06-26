@@ -22,7 +22,7 @@ var plugins = [
     // https://github.com/ampedandwired/html-webpack-plugin
     new FriendlyErrors()
 ];
-var fileNames = utils.getEntrys("./src/entry"),viewPtah="./src/view/";
+var fileNames = utils.getEntrys("./src/entry"),viewPtah="./src/html/";
 fileNames.forEach(function (item) {
     plugins.push(
         new HtmlWebpackPlugin({

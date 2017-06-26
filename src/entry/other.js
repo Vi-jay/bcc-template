@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import App from './Other.vue'
+import App from 'VIEW/Other.vue'
 import iView from 'iview'
 import RouterConfig from 'ROUTES/router'
 import VueRouter from 'vue-router'

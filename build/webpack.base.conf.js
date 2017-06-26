@@ -71,23 +71,15 @@ module.exports = {
                 test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
                 loader: 'url',
                 query: {
-                    limit: 100,
-                    name: 'img/[name].[ext]'
-                }
-            },
-            {
-                test: /\.css$/,
-                loader: 'url',
-                query: {
-                    limit: 1000,
-                    name: utils.assetsPath('css/[name].[ext]')
+                    limit: 200,
+                    name: utils.assetsPath('img/[name].[ext]')
                 }
             },
             {
                 test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
                 loader: 'url',
                 query: {
-                    limit: 100,
+                    limit: 200,
                     name: utils.assetsPath('fonts/[name].[ext]')
                 }
             }
@@ -97,7 +89,12 @@ module.exports = {
         loaders: utils.cssLoaders({sourceMap: useCssSourceMap}),
         postcss: [
             require('autoprefixer')({
-                browsers: ['last 2 versions']
+                browsers: [
+                    "> 1%",
+                    "last 20 versions",
+                    "Firefox < 20",
+                    "ie 9"
+                ]
             })
         ]
     }
