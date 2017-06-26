@@ -8,6 +8,7 @@ Bcc-Template
      >> `mixins` 混入vue全局函数
      >> `routes` 路由目录
      >> `utils`  工具函数目录
+     >> `plugins`插件目录
      >> `html`   html文件存放目录
         >>> `static`   reset文件存放目录
      >> `entry`  main入口文件目录
