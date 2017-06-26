@@ -8,7 +8,10 @@ Bcc-Template
      >> `mixins` 混入vue全局函数
      >> `routes` 路由目录
      >> `utils`  工具函数目录
-     >> `view`   html文件存放目录
+     >> `html`   html文件存放目录
+        >>> `static`   reset文件存放目录
+     >> `entry`  main入口文件目录
+     >> `view`   页面模板目录
      >> `vuex`   store数据管理目录
 
 ### static 静态资源文件存放目录 不会被编译
@@ -28,5 +31,6 @@ Bcc-Template
 
     >> 新建`模块`步骤
 
-     * 创建html到src/view目录
+     * 创建html到src/html目录
      * 创建入口.js到entry目录
+     * 创建.vue模板文件到view目录
