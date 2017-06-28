@@ -2,7 +2,12 @@
     <div>
         <header>
             <h1 v-once>{{aa}}</h1>
-            <input ref="input" @input.prevent="input(aa,$event)" v-bind:class="name.split('').reverse().join('')" type="text" v-model="aa">
+            <input ref="input" @input.prevent="input(aa,$event)" :class="name.split('').reverse().join('')" type="text" v-model="aa">
+            <span>{{aa | pingfang(name)}}</span>
+            <ina :aac.sync="aa" @alertMe="showHim">
+                你好啊
+                <h1 slot="h1" style="font-size: 0.20rem">我是具名传入的数据</h1>
+            </ina>
         </header>
         <article>
             <h2></h2>
@@ -20,30 +25,34 @@
 </template>
 
 <script>
-    import {mapGetters} from 'vuex'
     import {extend} from 'src/utils/Utils'
+    const ina=require("VIEW/input.vue");
     export default {
+        props:{},
         data () {
             return {
                 aa: 1,
-                name:"Aa"
+                name:"Aa",
+                ccc:666,
+                abcd:false
             }
         },
         methods: {
             cc(){
-                this.$store.dispatch("account/checkout", {amount: 50});
-                this.$store.dispatch("account/sayHello", {amount: 50});
             },
             input(a,event){
-                console.log(a);
-                console.log(this.$refs.input.className);
-                console.log(event.target)
+                this.abcd=!this.abcd;
+            },
+            showHim(arg){
+                alert(arg);
+                console.log(event)
             }
         },
         created(){
             var a = {
                 b: 2
             };
+
             var c = {
                 ad: 6
             };
@@ -56,19 +65,24 @@
                 console.log(data);
             })
         },
+        components:{
+            ina
+        },
         computed: {
-            ...mapGetters('account', ['todo'])
-            /***
-             * 相当于 todo(){return this.$store.getters.todo}
-             * mapGetters是将数组参数中的每个字符串 作为{todo:()=>{return this.$store.getters.todo} 等等.....}
-             * 然后再使用...把该函数返回的对象展开成为computed的属性
-             */
-//            todo(){   获取命名空间的state
-//                return this.$store.state["account"].count
-//            }
+            he(){
+                return this.aa*2;
+            }
         },
         destroyed(){
 
+        },
+        update(){
+            console.log("组件被更新")
+        },
+        filters:{
+            pingfang(value,name){
+                return value*2;
+            }
         }
     }
 </script>

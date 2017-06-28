@@ -13,7 +13,6 @@
 </template>
 
 <script>
-    import {mapGetters} from 'vuex'
     import {common} from 'src/utils/Utils'
     export default {
         data () {
@@ -21,14 +20,11 @@
         },
         methods: {
             cc(){
-                this.$store.dispatch("account/checkout", {amount: 50});
-                this.$store.dispatch("account/sayHello", {amount: 50});
             }
         },
         created(){
         },
         computed: {
-            ...mapGetters('account', ['todo'])
             /***
              * 相当于 todo(){return this.$store.getters.todo}
              * mapGetters是将数组参数中的每个字符串 作为{todo:()=>{return this.$store.getters.todo} 等等.....}
