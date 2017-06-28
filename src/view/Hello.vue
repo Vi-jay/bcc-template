@@ -43,6 +43,7 @@
 <style lang="less">
     @hello: 20px;
     body {
+        font-size: 0.16rem;
         background: lighten(gainsboro, 30%);
         #app {
             font-family: 'Avenir', Helvetica, Arial, sans-serif;

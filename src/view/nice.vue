@@ -17,6 +17,9 @@
 </script>
 
 <style lang="less">
+    body{
+        font-size: 0.16rem;
+    }
     .abc{
         background: red;
         width: 300px;

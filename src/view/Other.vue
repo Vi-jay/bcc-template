@@ -1,24 +1,18 @@
 <template>
     <div>
-        <h2>hello</h2>
-        <img src="../assets/img/aa.jpg" alt="">
-        <img src="../assets/img/bb.png" alt="">
-        <p>
-            <router-link to="/foo">Go to Foo</router-link>
-            <router-link to="/bar">Go to Bar</router-link>
-        </p>
-        <button @click="cc">button</button>
-        <router-view></router-view>
-        <h1>{{todo}}</h1>
+        {{aa}}
+        <input type="text" v-model="aa">
     </div>
 </template>
 
 <script>
     import {mapGetters} from 'vuex'
-    import {common} from 'src/utils/Utils'
+    import {extend} from 'src/utils/Utils'
     export default {
         data () {
-            return {}
+            return {
+                aa:1
+            }
         },
         methods: {
             cc(){
@@ -27,6 +21,20 @@
             }
         },
         created(){
+            var a={
+                b:2
+            };
+            var c={
+                ad:6
+            };
+            var db={
+                c:c
+            };
+            extend(true,a,db);
+            db.c.ad=7;
+            this.$http.get("./hello.html").then(({data})=> {
+                console.log(data);
+            })
         },
         computed: {
             ...mapGetters('account', ['todo'])
@@ -38,10 +46,16 @@
 //            todo(){   获取命名空间的state
 //                return this.$store.state["account"].count
 //            }
+        },
+        destroyed(){
+
         }
     }
 </script>
 
 <style lang="less">
+    body{
+        font-size: 0.16rem;
+    }
    @import "../assets/less/other";
 </style>

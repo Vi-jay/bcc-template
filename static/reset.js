@@ -1,5 +1,5 @@
 (function (doc, win) {
-    var docEl = doc.documentElement,
+    var docEl = doc.documentElement,docBl = doc.body,
         resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
         recalc = function () {
             var clientWidth = docEl.clientWidth;
@@ -9,9 +9,6 @@
             }else{
                 docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
             }
-            setTimeout(function () {
-                document.body.style.fontSize = '0.16rem';
-            })
         };
 
     if (!doc.addEventListener) return;

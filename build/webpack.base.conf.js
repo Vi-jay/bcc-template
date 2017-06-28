@@ -4,12 +4,11 @@ var utils = require('./utils')
 var projectRoot = path.resolve(__dirname, '../')
 
 
-
 var fileNames = utils.getEntrys("./src/entry");
 //entryPath
-var entry={},entryPath="./src/entry/";
+var entry = {}, entryPath = "./src/entry/";
 fileNames.forEach(function (item) {
-    entry[item]=entryPath+item+".js"
+    entry[item] = entryPath + item + ".js"
 });
 
 var env = process.env.NODE_ENV
@@ -24,14 +23,14 @@ module.exports = {
     //     app: './src/entry/main.js',
     //     other: './src/entry/other.js',
     // },
-    entry:entry,
+    entry: entry,
     output: {
         path: config.build.assetsRoot,
         publicPath: process.env.NODE_ENV === 'production' ? config.build.assetsPublicPath : config.dev.assetsPublicPath,
         filename: '[name].js'
     },
     resolve: {
-        extensions: ['', '.js', '.vue', '.json'],
+        extensions: ['', '.js', '.vue', '.json', 'less', 'sass'],
         fallback: [path.join(__dirname, '../node_modules')],
         /*别名*/
         alias: {
@@ -43,7 +42,8 @@ module.exports = {
             'MIXINS': path.resolve(__dirname, '../src/mixins'),
             'UTILS': path.resolve(__dirname, '../src/utils'),
             'VUEX': path.resolve(__dirname, '../src/vuex'),
-            'VIEW': path.resolve(__dirname, '../src/view')
+            'VIEW': path.resolve(__dirname, '../src/view'),
+            'STATIC': path.resolve(__dirname, '../static')
         }
     },
     resolveLoader: {
