@@ -31,7 +31,7 @@
     }
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
 
         .article-name{
             font-size: 0.3rem;

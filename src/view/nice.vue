@@ -16,7 +16,7 @@
     }
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
     body{
         font-size: 0.16rem;
     }

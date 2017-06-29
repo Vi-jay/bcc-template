@@ -28,7 +28,7 @@
     }
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
     @hello: 20px;
     body {
         font-size: 0.16rem;

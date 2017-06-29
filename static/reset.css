@@ -85,5 +85,6 @@ audio, video, canvas {
     display: inline-block;
 }
 body {
+    -webkit-font-smoothing: antialiased;
     font-size: 0.16rem;
 }

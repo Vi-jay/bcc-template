@@ -1,4 +1,5 @@
 <template>
+    <div>
     <div class="main">
         <header>
             <h1>资料:</h1>
@@ -20,21 +21,21 @@
             <span class="article-footer-move" v-for="(value,key) in link">{{key}}</span>
         </footer>
         <aside>
-            <button  @click="showLeft">show left nav</button>
+            <button @click="showLeft">show left nav</button>
         </aside>
         <transition name="fade">
             <aside class="aside" v-show="leftNavToggle">
                 <nav>
-                    <ul v-for="value in nav">
-                        <li class="nav-li">{{value}}</li>
-                    </ul>
+                    <transition-group name="flip-list" tag="ul">
+                        <li class="nav-li" :key="value" v-for="(value,index) in nav">{{value}}</li>
+                    </transition-group>
                 </nav>
             </aside>
         </transition>
         <h1>{{cbd}}</h1>
         <h1>{{bbc}}</h1>
         <h1>{{aa}}</h1>
-        <form action=""  ref="abc" >
+        <form action="" ref="abc">
             <input type="text" name="username" v-model="name">
             <input type="text" name="password">
             <input type="checkbox" name="aac" value="66" checked>
@@ -46,14 +47,18 @@
                 <option value="3">4</option>
             </select>
         </form>
-        <charts></charts>
+        <charts :callback="setChartByDefault"></charts>
+        <button @click="toggle=!toggle">click</button>
+    </div>
+        <messageBox :open="toggle"></messageBox>
     </div>
 </template>
 
 <script>
     const testComponent = require("./component_test.vue");
     const charts = require("COMPONENTS/charts");
-    const utils= require("UTILS/utils");
+    const messageBox = require("COMPONENTS/message_box");
+    const utils = require("UTILS/utils");
 
     export default {
         //父组件传入子组件属性
@@ -86,14 +91,49 @@
                     to: "./", back: "./"
                 }, cbd: 0,
                 nav: ["toTOP", "toLeft", "toRight", "toBottom"],
-                leftNavToggle: false
+                leftNavToggle: false,
+                option: {},
+                toggle:false
             }
         },
 
         //函数 计算函数 过滤器函数 钩子
         methods: {
             showLeft(){
+                setTimeout(() => {
+                    this.nav = this.nav.reverse();
+                }, 1000);
                 this.leftNavToggle = !this.leftNavToggle;
+            },
+            setChartByDefault(){
+                return new Promise(function (resolve) {
+                    return resolve({
+                        chartType: "pie",
+
+                    })
+                })
+            },
+            setChartOption(){
+                setTimeout(() => {
+                    this.option = {
+                        title: {
+                            text: 'ECharts 入门示例'
+                        },
+                        tooltip: {},
+                        legend: {
+                            data: ['销量']
+                        },
+                        xAxis: {
+                            data: ["衬衫", "羊毛衫", "雪纺衫", "裤子", "高跟鞋", "袜子"]
+                        },
+                        yAxis: {},
+                        series: [{
+                            name: '销量',
+                            type: 'bar',
+                            data: [5, 20, 36, 10, 10, 20]
+                        }]
+                    };
+                }, 2000)
             }
         },
         computed: {
@@ -109,46 +149,42 @@
         //组件钩子
         components: {
             testComponent,
-            charts
+            charts,
+            messageBox
         },
         //生命周期钩子
         created(){
-            this.$nextTick(()=> {
+            this.$error("hello");
+            this.setChartOption();
+            this.$nextTick(() => {
                 console.log(utils.makeLikeArrayToArray(this.$refs.abc));
                 console.log(JSON.stringify(utils.serialize(this.$refs.abc)));
             });
-             Promise.resolve().then(() => {
-                    this.cbd=1234
-                });
+            Promise.resolve().then(() => {
+                this.cbd = 1234
+            });
             console.log("组件被创建");
-            var a={0:1,1:2,length:2};
-            void function (a,b,c) {
-                utils.each(arguments,function (item,index,arr) {
-                    console.log(item);
-                    arr[index]=item*2;
-                });
-            }(1,2,6);
-         var b={c:2};
-         utils.extend(true,b,a);
-         console.log(b)
         },
         destroyed(){
             console.log("组件被销毁")
         },
         mounted(){
             console.log("组件被挂载")
-        }
+        },
+        //监听变量
+        watch: {}
     }
 
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
     body {
         font-size: 0.16rem;
         text-align: center;
         .main {
-            width: min-content;
-            margin: 0 auto;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
             .article-label {
                 display: block;
             }
@@ -182,5 +218,9 @@
     .fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */
     {
         opacity: 0
+    }
+
+    .flip-list-move {
+        transition: transform 1s;
     }
 </style>
