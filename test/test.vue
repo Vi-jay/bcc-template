@@ -34,11 +34,24 @@
         <h1>{{cbd}}</h1>
         <h1>{{bbc}}</h1>
         <h1>{{aa}}</h1>
+        <form action=""  ref="abc" >
+            <input type="text" name="username" v-model="name">
+            <input type="text" name="password">
+            <input type="checkbox" name="aac" value="66" checked>
+            <input type="checkbox" name="aac" value="666" checked>
+            <input type="checkbox" name="aac" value="66666">
+            <select name="select">
+                <option value="1">1</option>
+                <option value="2">3</option>
+                <option value="3">4</option>
+            </select>
+        </form>
     </div>
 </template>
 
 <script>
     const testComponent = require("./component_test.vue");
+    const $ = require("UTILS/utils");
 
     export default {
         //父组件传入子组件属性
@@ -97,10 +110,24 @@
         },
         //生命周期钩子
         created(){
+            this.$nextTick(()=> {
+                console.log($.makeLikeArrayToArray(this.$refs.abc));
+                console.log(JSON.stringify($.serialize(this.$refs.abc)));
+            });
              Promise.resolve().then(() => {
                     this.cbd=1234
                 });
-            console.log("组件被创建")
+            console.log("组件被创建");
+            var a={0:1,1:2,length:2};
+            void function (a,b,c) {
+                utils.each(arguments,function (item,index,arr) {
+                    console.log(item);
+                    arr[index]=item*2;
+                });
+            }(1,2,6);
+         var b={c:2};
+         utils.extend(true,b,a);
+         console.log(b)
         },
         destroyed(){
             console.log("组件被销毁")

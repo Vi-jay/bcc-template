@@ -25,7 +25,7 @@
 </template>
 
 <script>
-    import {extend} from 'src/utils/Utils'
+    import utils from 'UTILS/utils'
     const ina=require("VIEW/input.vue");
     export default {
         props:{},
@@ -49,21 +49,7 @@
             }
         },
         created(){
-            var a = {
-                b: 2
-            };
 
-            var c = {
-                ad: 6
-            };
-            var db = {
-                c: c
-            };
-            extend(true, a, db);
-            db.c.ad = 7;
-            this.$http.get("./hello.html").then(({data}) => {
-                console.log(data);
-            })
         },
         components:{
             ina

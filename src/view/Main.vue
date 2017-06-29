@@ -13,7 +13,8 @@
 </template>
 
 <script>
-    import {common} from 'src/utils/Utils'
+    import utils from 'UTILS/utils'
+
     export default {
         data () {
             return {}
