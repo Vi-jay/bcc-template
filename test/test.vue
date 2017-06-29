@@ -20,7 +20,7 @@
             <span class="article-footer-move" v-for="(value,key) in link">{{key}}</span>
         </footer>
         <aside>
-            <button @click="showLeft">show left nav</button>
+            <button  @click="showLeft">show left nav</button>
         </aside>
         <transition name="fade">
             <aside class="aside" v-show="leftNavToggle">
