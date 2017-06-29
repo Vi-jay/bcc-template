@@ -84,3 +84,6 @@ footer, header, hgroup, menu, nav, section {
 audio, video, canvas {
     display: inline-block;
 }
+body {
+    font-size: 0.16rem;
+}
