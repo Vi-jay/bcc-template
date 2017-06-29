@@ -46,12 +46,14 @@
                 <option value="3">4</option>
             </select>
         </form>
+        <charts></charts>
     </div>
 </template>
 
 <script>
     const testComponent = require("./component_test.vue");
-    const $ = require("UTILS/utils");
+    const charts = require("COMPONENTS/charts");
+    const utils= require("UTILS/utils");
 
     export default {
         //父组件传入子组件属性
@@ -106,13 +108,14 @@
 
         //组件钩子
         components: {
-            testComponent
+            testComponent,
+            charts
         },
         //生命周期钩子
         created(){
             this.$nextTick(()=> {
-                console.log($.makeLikeArrayToArray(this.$refs.abc));
-                console.log(JSON.stringify($.serialize(this.$refs.abc)));
+                console.log(utils.makeLikeArrayToArray(this.$refs.abc));
+                console.log(JSON.stringify(utils.serialize(this.$refs.abc)));
             });
              Promise.resolve().then(() => {
                     this.cbd=1234

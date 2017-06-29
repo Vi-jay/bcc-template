@@ -12,6 +12,7 @@
   "dependencies": {
     "axios": "^0.16.2",
     "babel": "^6.23.0",
+    "echarts": "^3.6.2",
     "iview": "^2.0.0-rc.15",
     "vue": "^2.1.0",
     "vue-router": "^2.2.0",
