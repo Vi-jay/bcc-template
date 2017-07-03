@@ -1,5 +1,5 @@
 <template>
-    <div class="dropdown" ref="select" @click="control()">
+    <div class="dropdown" ref="select" @click="show=!show">
         {{selected}}
         <ul class="dropdown-list" v-if="show">
             <li v-for="list in name" @click="select(list)" :key="list">{{list}}</li>
@@ -24,15 +24,12 @@
       }
     },
     methods: {
-      control: function () {
-        if (this.show == true) {this.show = false} else {this.show = true}
-      },
       select: function (value) {
          this.selected=value
       }
     },
     created () {
-   this.selected=this.name[0]
+       this.selected=this.name[0]
     },
     computed: {}
   }
