@@ -47,6 +47,9 @@
                 <option value="3">4</option>
             </select>
         </form>
+        <transition-group tag="ul" name="fade">
+            <li v-for="value in arr" :key="value">{{value}}</li>
+        </transition-group>
         <charts :callback="setChartByDefault"></charts>
         <button @click="toggle=!toggle">click</button>
     </div>
@@ -93,7 +96,10 @@
                 nav: ["toTOP", "toLeft", "toRight", "toBottom"],
                 leftNavToggle: false,
                 option: {},
-                toggle:false
+                toggle:false,
+                arr:[
+                    1,2,3,4,5
+                ]
             }
         },
 
@@ -156,6 +162,9 @@
         created(){
             this.$error("hello");
             this.setChartOption();
+            setTimeout(()=> {
+               this.arr.splice(0,1);
+            },2000);
             this.$nextTick(() => {
                 console.log(utils.makeLikeArrayToArray(this.$refs.abc));
                 console.log(JSON.stringify(utils.serialize(this.$refs.abc)));
@@ -222,5 +231,16 @@
 
     .flip-list-move {
         transition: transform 1s;
+    }
+    .fade-move{
+        transition: transform 1s;
+
+    }
+    .fade-enter-active, .fade-leave-active {
+        transition: all 1s;
+    }
+    .fade-enter, .fade-leave-active {
+        opacity: 0;
+        transform: translateY(30px);
     }
 </style>

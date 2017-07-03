@@ -1,6 +1,6 @@
 <template>
     <div class="module">
-       <navComponent></navComponent>
+       <navComponent ></navComponent>
         <selectComponent></selectComponent>
     </div>
 </template>

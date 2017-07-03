@@ -21,6 +21,7 @@
 </template>
 
 <script>
+    import _ from "UTILS/utils";
     export default {
         props: {
             open: Boolean
@@ -32,7 +33,8 @@
         },
         methods: {},
         created(){
-
+            const a=[1,2,3];
+            console.log(_.chunk(a,2));
         },
         computed: {},
         watch: {

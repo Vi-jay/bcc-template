@@ -91,11 +91,13 @@
         methods: {
             async initChart(callback){
                 this.chartInstance = echarts.init(this.$refs.main);
+                if(callback){
                 let param = await callback(),
                     chartType = param.chartType,
                     option = this.defaultOption[chartType];
                 extend(true, param, option);
                 this.chartInstance.setOption(param);
+                }
             }
         },
         created(){

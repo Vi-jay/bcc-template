@@ -1,5 +1,5 @@
 const utils = Object.create(null);
-
+import _ from "lodash/array";
 
 void function () {
     //----------------------------------------------工具变量
@@ -247,7 +247,8 @@ void function () {
             return JSON.stringify(serializeJson);
         }
     });
-
+    //添加第三方工具包
+    utils.extend(true,utils,_);
 }();
 
 

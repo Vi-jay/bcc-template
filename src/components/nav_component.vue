@@ -1,30 +1,32 @@
 <template>
     <transition-group name="fadeIn" tag="ul" class="pagination">
-        <li v-show="current != 1" @click="current-- && goto(current)" :key="nav-1"><a href="#">&laquo;</a></li>
+        <li v-show="current != 1" @click="current-- && goto(current)" :key="'nav-1'"><a href="#">&laquo;</a></li>
         <li v-for="index in pages" @click="goto(index)" :class="{'active':current == index}" :key="index">
             <a href="#">{{index}}</a>
         </li>
-        <li v-show="allpage != current && allpage != 0 " @click="current++ && goto(current)" :key="nav-2"><a href="#">&raquo;</a>
+        <li v-show="allpage != current && allpage != 0 " @click="current++ && goto(current)" :key="'nav-2'"><a href="#">&raquo;</a>
         </li>
     </transition-group>
 </template>
 
 <script>
+    import _ from "UTILS/utils"
   export default {
     data () {
       return {
         current: 1,
         showItem: 5,
-        allpage: 20
+        allpage: 20,
+          pa:[]
       }
     },
     computed: {
       pages: function () {
-        var pag = []
+        var pag = this.pa;
         if (this.current < this.showItem) {
           var i = Math.min(this.showItem, this.allpage)
           while (i) {
-            pag.unshift(i--)
+              pag.unshift(i--);
           }
         } else {
           var middle = this.current - Math.floor(this.showItem / 2), i = this.showItem

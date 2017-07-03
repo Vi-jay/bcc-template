@@ -8,6 +8,9 @@
                 你好啊
                 <h1 slot="h1" style="font-size: 0.20rem">我是具名传入的数据</h1>
             </ina>
+            <transition-group tag="ul">
+                <li v-for="value in arr" :key="value">{{value}}</li>
+            </transition-group>
         </header>
         <article>
             <h2></h2>
@@ -21,6 +24,7 @@
             <aside>
             </aside>
         </article>
+
     </div>
 </template>
 
@@ -34,7 +38,10 @@
                 aa: 1,
                 name:"Aa",
                 ccc:666,
-                abcd:false
+                abcd:false,
+                arr:[
+                    1,2,3,4,5
+                ]
             }
         },
         methods: {
