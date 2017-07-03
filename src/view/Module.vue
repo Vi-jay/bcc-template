@@ -14,7 +14,7 @@
     },
     methods: {},
     created () {
-
+    console.log("local")
     },
     computed: {},
     components:{
