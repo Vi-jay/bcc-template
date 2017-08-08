@@ -12,16 +12,16 @@ var webpackConfig = require('./webpack.prod.conf')
 console.log(
   '  Tip:\n' +
   '  Built files are meant to be served over an HTTP server.\n' +
-  '  Opening index.html over file:// won\'t work.\n'
+  '  Opening main.html over file:// won\'t work.\n'
 )
 
 var spinner = ora('building for production...')
 spinner.start()
 
-var assetsPath = path.join(config.build.assetsRoot, config.build.assetsSubDirectory)
-rm('-rf', assetsPath)
-mkdir('-p', assetsPath)
-cp('-R', 'static/*', assetsPath)
+// var assetsPath = path.join(config.build.assetsRoot, config.build.assetsSubDirectory+"/static/")
+// rm('-rf', assetsPath)
+// mkdir('-p', assetsPath)
+// cp('-R', 'src/html/static/*', assetsPath)
 
 webpack(webpackConfig, function (err, stats) {
   spinner.stop()
