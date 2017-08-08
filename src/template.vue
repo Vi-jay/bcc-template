@@ -1,6 +1,17 @@
 <template>
-    <div >
-        123
+    <div>
+        <div class="content"></div>
+        <div class="select-container">
+            <p class="question"></p>
+            <div>
+                <ul>
+                    <li class="option"><span class="checkbox"></span><span class="answer"></span></li>
+                    <li class="option"><span class="checkbox"></span><span class="answer"></span></li>
+                    <li class="option"><span class="checkbox"></span><span class="answer"></span></li>
+                    <li class="option"><span class="checkbox"></span><span class="answer"></span></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -10,20 +21,16 @@
         data () {
 
         },
-        methods: {
-
-        },
+        methods: {},
         created(){
 
         },
-        computed: {
-
-        }
+        computed: {}
     }
 </script>
 
 <style lang="less">
-body{
-    background: lighten(red,10%);
-}
+    .content {
+        background: url("../img/");
+    }
 </style>
